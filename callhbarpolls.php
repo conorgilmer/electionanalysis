@@ -37,6 +37,13 @@ $id = $_GET['id'];
 
     <img src="http://localhost/electionanalysis/graphpoll.php?type=hbar&title=Parties&height=450&width=900&id=<?echo $id;?>"/> 
  
+<p>
+ <a href="callpiepolls.php?id=<?echo $id;?>" class=btn btn-primary role=button>Pie Chart</a>
+ <a href="callvbarpolls.php?id=<?echo $id;?>" class=btn btn-primary role=button>Vertical Bar Chart</a>
+ <a href="callhbarpolls.php?id=<?echo $id;?>" class=btn btn-primary role=button>Horizontal Bar Chart</a>
+
+ </p>
+
 
 </div>
 

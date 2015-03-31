@@ -33,13 +33,16 @@ $id = $_GET['id'];
 </div>
 </div>
 <div clas="row">
-<div class="span9">
+<div class="span12">
 
-    <img src="http://localhost/electionanalysis/piepoll.php?title=Parties&height=450&width=900&id=<?echo $id;?>"/> 
+    <img src="http://localhost/electionanalysis/graphpoll.php?type=pie&title=Parties&height=450&width=900&id=<?echo $id;?>"/> 
  
-</div>
-<div class="span3"></div>
+ <p>
+ <a href="callpiepolls.php?id=<?echo $id;?>" class=btn btn-primary role=button>Pie Chart</a> 
+ <a href="callvbarpolls.php?id=<?echo $id;?>" class=btn btn-primary role=button>Vertical Bar Chart</a> 
+ <a href="callhbarpolls.php?id=<?echo $id;?>" class=btn btn-primary role=button>Horizontal Bar Chart</a> 
 
+ </p>
 </div>
 
 
