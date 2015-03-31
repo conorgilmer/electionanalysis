@@ -19,7 +19,7 @@ define ( "TEMPLATE_PATH", APPLICATION_PATH . "/view" );
  */
 include (APPLICATION_PATH . "/inc/config.inc.php");
 include (APPLICATION_PATH . "/inc/db.inc.php");
-//include (APPLICATION_PATH . "/inc/functions.inc.php");
+include (APPLICATION_PATH . "/inc/functions.inc.php");
 
 //Set up variable so 'active' class set on navbar link
 $activeHome = "active";
@@ -66,7 +66,7 @@ if ($result) {
 	{
 		$htmlString .=  "<tr>" ;
 		$htmlString .=  "<td>";
-		$htmlString .=  $product["id"];
+		$htmlString .=  output_pie_link($product["id"]); //$product["id"];
 		$htmlString .=  "</td>";
 		$htmlString .=  "<td>";
 		$htmlString .=  $product["date"];
