@@ -33,13 +33,22 @@ include (TEMPLATE_PATH . "/public/header.html");
 </div>
 </div>
 <div clas="row">
-<div class="span9">
+<div class="span12">
 
-    <img src="http://localhost/electionanalysis/lineall.php?title=Poll+of+Polls&height=800&width=1600&table=polls_ireland"/> 
+    <img src="http://localhost/electionanalysis/lineall.php?title=Poll+of+Polls&height=900&width=1800&table=polls_ireland"/> 
+
+
+
+<p>
+ <a href="allpolls.php?party=ff" class=btn btn-primary role=button>FF</a>
+ <a href="allpolls.php?party=fg" class=btn btn-primary role=button>FG</a>
+ <a href="allpolls.php?party=lb" class=btn btn-primary role=button>LAB</a>
+ <a href="allpolls.php?party=sf" class=btn btn-primary role=button>SF</a>
+ <a href="allpolls.php?party=gp" class=btn btn-primary role=button>GP</a>
+ <a href="allpolls.php?party=ind" class=btn btn-primary role=button>Ind</a>
+
+ </p>
  
-</div>
-<div class="span3"></div>
-
 </div>
 
 
