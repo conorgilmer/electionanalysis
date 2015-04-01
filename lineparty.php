@@ -10,6 +10,7 @@ define ( "APPLICATION_PATH", "application" );
  */
 include (APPLICATION_PATH . "/inc/config.inc.php");
 include (APPLICATION_PATH . "/inc/db.inc.php");
+include (APPLICATION_PATH . "/inc/functions.inc.php");
 
 include "library/libchart/classes/libchart.php";
 
@@ -22,7 +23,7 @@ include "library/libchart/classes/libchart.php";
 	$party  = $_GET['party'];
 //	$type   = $_GET['type'];
 	//$table  = "polls_ireland";
-	
+	$partyName = getName($party);	
 	$chart = new LineChart($width,$height);
 
 	$party1 = new XYDataSet();
@@ -41,7 +42,7 @@ include "library/libchart/classes/libchart.php";
  
 
 	$dataSet = new XYSeriesDataSet();
-	$dataSet->addSerie($party, $party1);
+	$dataSet->addSerie($partyName, $party1);
 	$chart->setDataSet($dataSet);
 
 	$chart->setTitle($title);
