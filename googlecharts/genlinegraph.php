@@ -1,0 +1,79 @@
+<?php
+   include('config.php');
+
+    $choice = $_GET["q"]; 
+    $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
+    mysql_select_db($dbname);    
+	
+// The Chart table contain two fields: Date and PercentageChange
+$queryData = mysql_query("
+  SELECT	date,
+                ff,
+                fg,
+                lab,
+                sf,
+                pd,
+                others
+        FROM polls_ireland ");
+
+
+
+if ($choice == 'all') {
+$table = array();
+$table['cols'] = array(
+    array('label' => 'Date', 'type' => 'string'),
+    array('label' => 'ff', 'type' => 'number'),
+    array('label' => 'fg', 'type' => 'number'),
+    array('label' => 'lab', 'type' => 'number'),
+    array('label' => 'sf', 'type' => 'number'),
+    array('label' => 'pd', 'type' => 'number'),
+    array('label' => 'others', 'type' => 'number')
+);
+//First Series
+$rows = array();
+while($r = mysql_fetch_assoc($queryData)) {
+	$temp = array();
+	// the following line will used to slice the Pie chart
+	$temp[] = array('v' => (string) $r['date']); 
+
+	//Values of the each slice
+	$temp[] = array('v' => (float) $r['ff']); 
+	$temp[] = array('v' => (float) $r['fg']); 
+	$temp[] = array('v' => (float) $r['lab']); 
+	$temp[] = array('v' => (float) $r['sf']); 
+	$temp[] = array('v' => (float) $r['pd']); 
+	$temp[] = array('v' => (float) $r['others']); 
+	$rows[] = array('c' => $temp);
+}
+}
+else {
+$table = array();
+$table['cols'] = array(
+    array('label' => 'Date', 'type' => 'string'),
+    array('label' => $choice, 'type' => 'number')
+);
+//First Series
+$rows = array();
+while($r = mysql_fetch_assoc($queryData)) {
+	$temp = array();
+	// the following line will used to slice the Pie chart
+	$temp[] = array('v' => (string) $r['date']); 
+
+	//Values of the each slice
+	$temp[] = array('v' => (float) $r[$choice]); 
+	$rows[] = array('c' => $temp);
+}
+}
+
+$table['rows'] = $rows;
+$jsonTable = json_encode($table);
+
+echo $jsonTable;
+
+?>
+
+
+
+
+
+

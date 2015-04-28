@@ -1,0 +1,10 @@
+~
+*.zip
+*.gz
+*.tmp
+config.php
+config.inc.php
+*.old
+*.toc
+*.aux
+*.dvi
