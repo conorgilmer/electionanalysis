@@ -43,7 +43,6 @@
     <option value="pd">Progressive Democrats</option>
     <option value="green">Green</option>
     <option value="rn">ReNua</option>
-    <option value="rn">ReNua</option>
     <option value="sp">Socialist Party</option>
     <option value="pb">People Before Profit</option>
     <option value="wp">Workers Party</option>
