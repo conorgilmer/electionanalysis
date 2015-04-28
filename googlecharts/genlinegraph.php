@@ -8,6 +8,7 @@
 // The Chart table contain two fields: Date and PercentageChange
 $queryData = mysql_query("
   SELECT	date,
+                source,
                 ff,
                 fg,
                 lab,
@@ -59,8 +60,8 @@ $table['cols'] = array(
 $rows = array();
 while($r = mysql_fetch_assoc($queryData)) {
 	$temp = array();
-	// the following line will used to slice the Pie chart
 	$temp[] = array('v' => (string) $r['date']); 
+	//$temp[] = array('v' => (string) $r['source'] . $r['date']); 
 
 	//Values of the each slice
 	$temp[] = array('v' => (float) $r[$choice]); 
