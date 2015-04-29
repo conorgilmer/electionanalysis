@@ -34,6 +34,7 @@
 
 </head>
 <body>
+  <h1>Opinion Polls UK 2015 - Line Graphs</h1>
   <form>
   <select name="users" onchange="drawItems(this.value)">
   <option value="all">Select a Party:</option>
