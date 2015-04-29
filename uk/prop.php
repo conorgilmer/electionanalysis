@@ -86,7 +86,7 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-9">
- <h2>UK Westminister Election Seats - Line Graphs</h2>
+ <h2>UK Westminister Election Proportionality - Line Graphs</h2>
 <p>Select a Graph for a part from the opinion polls or view all</p>
   <form>
   <select name="users" onchange="drawItems(this.value)">

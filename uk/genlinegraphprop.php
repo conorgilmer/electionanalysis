@@ -43,7 +43,8 @@ $queryData = mysql_query("
                 dup,
                 sdlp,
                 sf,
-                others
+                others,
+                allseats
         FROM seats_uk ");
 
 
@@ -70,21 +71,21 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp = array();
 	// the following line will used to slice the Pie chart
 	$temp[] = array('v' => (string) $r['date']); 
-
+	$seats =$r['allseats'];
 	//Values of the each slice
-	$temp[] = array('v' => (float) $r['cons']); 
-	$temp[] = array('v' => (float) $r['lab']); 
-	$temp[] = array('v' => (float) $r['libdems']); 
-	$temp[] = array('v' => (float) $r['green']); 
-	$temp[] = array('v' => (float) $r['ukip']); 
-	$temp[] = array('v' => (float) $r['ukip']); 
-	$temp[] = array('v' => (float) $r['snp']); 
-	$temp[] = array('v' => (float) $r['pc']); 
-	$temp[] = array('v' => (float) $r['uup']); 
-	$temp[] = array('v' => (float) $r['dup']); 
-	$temp[] = array('v' => (float) $r['sdlp']); 
-	$temp[] = array('v' => (float) $r['sf']); 
-	$temp[] = array('v' => (float) $r['others']); 
+	$temp[] = array('v' => (float) (100* $r['cons']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['lab']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['libdems']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['green']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['ukip']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['ukip']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['snp']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['pc']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['uup']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['dup']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['sdlp']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['sf']/$seats)); 
+	$temp[] = array('v' => (float) (100* $r['others']/$seats)); 
 	$rows[] = array('c' => $temp);
 }
 }
