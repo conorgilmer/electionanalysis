@@ -40,7 +40,7 @@
     <option value="all">All</option>
     <option value="lab">Labour</option>
     <option value="cons">Conservatives</option>
-    <option value="lib">Liberal Democrats</option>
+    <option value="libdems">Liberal Democrats</option>
     <option value="green">Green</option>
     <option value="ukip">UKIP</option>
     <option value="snp">SNP</option>
