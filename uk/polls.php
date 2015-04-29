@@ -98,7 +98,6 @@
     <option value="green">Green</option>
     <option value="ukip">UKIP</option>
     <option value="snp">SNP</option>
-    <!--option value="sp">Socialist Party</option>
     <option value="pc">Plaid Cymru</option>
     <option value="dup">DUP</option>
     <option value="uup">UUP</option>
