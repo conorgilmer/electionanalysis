@@ -1,6 +1,30 @@
 <?php
+
    include('config.php');
 
+function getName($name) {
+if ($name =='cons') {
+	$nameText = "Conservatives";
+}
+else if ($name =='lab') {
+	$nameText = "Labour";
+}
+else if ($name =='libdems') {
+	$nameText = "Liberal Democrats";
+}
+else if ($name =='green') {
+	$nameText = "Green Party";
+}
+else if ($name =='ukip') {
+	$nameText = "UKIP";
+}
+else if ($name =='others') {
+	$nameText = "Others/Independents";
+} else {
+	$nameText = $name;
+}
+return $nameText;
+}
     $choice = $_GET["q"]; 
     $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
     mysql_select_db($dbname);    
@@ -17,17 +41,16 @@ $queryData = mysql_query("
         FROM polls_uk ");
 
 
-
 if ($choice == 'all') {
 $table = array();
 $table['cols'] = array(
     array('label' => 'Date', 'type' => 'string'),
-    array('label' => 'cons', 'type' => 'number'),
-    array('label' => 'lab', 'type' => 'number'),
-    array('label' => 'libdems', 'type' => 'number'),
-    array('label' => 'ukip', 'type' => 'number'),
-    array('label' => 'green', 'type' => 'number'),
-    array('label' => 'others', 'type' => 'number')
+    array('label' => 'Conservatives', 'type' => 'number'),
+    array('label' => 'Labour', 'type' => 'number'),
+    array('label' => 'Liberal Democrats', 'type' => 'number'),
+    array('label' => 'Green', 'type' => 'number'),
+    array('label' => 'UKIP', 'type' => 'number'),
+    array('label' => 'Others', 'type' => 'number')
 );
 //First Series
 $rows = array();
@@ -40,8 +63,8 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['cons']); 
 	$temp[] = array('v' => (float) $r['lab']); 
 	$temp[] = array('v' => (float) $r['libdems']); 
-	$temp[] = array('v' => (float) $r['ukip']); 
 	$temp[] = array('v' => (float) $r['green']); 
+	$temp[] = array('v' => (float) $r['ukip']); 
 	$temp[] = array('v' => (float) $r['others']); 
 	$rows[] = array('c' => $temp);
 }
@@ -50,7 +73,7 @@ else {
 $table = array();
 $table['cols'] = array(
     array('label' => 'Date', 'type' => 'string'),
-    array('label' => $choice, 'type' => 'number')
+    array('label' => getName($choice), 'type' => 'number')
 );
 //First Series
 $rows = array();
