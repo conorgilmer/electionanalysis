@@ -21,7 +21,9 @@
                         var options = {
                                 title: 'UK Opinion Polls of ' +num,
                                 width: 900,
-                                height: 500
+                                height: 500,
+				vAxis: {title: "Percentage"},
+                                hAxis: {title: "Date of Polls"}
                         };
                         // Instantiate and draw our chart, passing in some options.
                         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
