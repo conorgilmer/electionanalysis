@@ -30,7 +30,7 @@
 </head>
 <body>
 
-<h1>Opinion Polls Ireland</h1>
+<h1>Opinion Polls Ireland - Pie Chart</h1>
   <form>
   <select name="users" onchange="drawChart(this.value)">
   <option value="">Select an opinion poll:</option>
