@@ -1,4 +1,9 @@
-#UK Opinion polls since the 2015 general election was called
+#UK Elections
+Seats and Vote share since 1979
+*To Do*
+- Calculate ratio of votes to seats and difference between seats share and vote share "bounce"
+
+##UK Opinion polls since the 2015 general election was called
 the others section needs to be broken up to take into account the SNP i suppose
 google charts used 
 the publication or last date of an opinion polls was taken as the date of the poll
