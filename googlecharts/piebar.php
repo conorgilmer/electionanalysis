@@ -9,7 +9,7 @@
   google.load('visualization', '1', {'packages':['corechart']});
   function drawChart(num) {
     var jsonChartData = $.ajax({
-      url: "getpolldata.php",
+      url: "getpolldatabar.php",
       data: "q="+num,
       dataType:"json",
       async: false
@@ -25,7 +25,7 @@
 
 // Instantiate and draw our chart, passing in some options.
       var bar_chart = new google.visualization.BarChart(document.getElementById('chart_div_bar'));
-      bar_chart.draw(data, {title: 'Opinion Poll - Bar Chart', width: 500, height: 340, legend: { position: 'none' },});
+      bar_chart.draw(data, {title: 'Opinion Poll - Bar Chart', bars: 'horizontal',  width: 500, height: 340, legend: { position: 'none' },});
     }
 
     </script>
