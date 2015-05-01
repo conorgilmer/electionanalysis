@@ -91,7 +91,7 @@
   <form>
   <select name="users" onchange="drawItems(this.value)">
   <option value="all">Select a Party:</option>
-    <option value="all">All</option>
+    <option value="all" selected >All</option>
     <option value="lab">Labour</option>
     <option value="cons">Conservatives</option>
     <option value="libdems">Liberal Democrats</option>
