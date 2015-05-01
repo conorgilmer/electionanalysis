@@ -49,7 +49,7 @@
                                 title: 'UK Elections Proportionality Seats v Vote ' +num,
                                 width: 900,
                                 height: 500,
-				vAxis: {title: "Seats"},
+				vAxis: {title: "Seats(Percentage)"},
                                 hAxis: {title: "Date of Election"}
                         };
                         // Instantiate and draw our chart, passing in some options.
@@ -87,11 +87,10 @@
       <div class="row">
         <div class="col-lg-9">
  <h2>UK Westminister Election Proportionality - Line Graphs</h2>
-<p>Select a Graph for a part from the opinion polls or view all</p>
+<p>Select a Party to compare vote share and seats acruing</p>
   <form>
   <select name="users" onchange="drawItems(this.value)">
   <option value="all">Select a Party:</option>
-    <option value="all">All</option>
     <option value="lab">Labour</option>
     <option value="cons">Conservatives</option>
     <option value="libdems">Liberal Democrats</option>

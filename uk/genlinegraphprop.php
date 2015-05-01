@@ -106,8 +106,8 @@ else {*/
 $table = array();
 $table['cols'] = array(
     array('label' => 'Date', 'type' => 'string'),
-    array('label' => getName($choice), 'type' => 'number'),
-    array('label' => 'Proportional', 'type' => 'number')
+    array('label' => getName($choice). ' Seats', 'type' => 'number'),
+    array('label' => 'Proportional Seat Share', 'type' => 'number')
 );
 //First Series
 $rows = array();
@@ -120,8 +120,8 @@ while($r = mysql_fetch_assoc($queryData)) {
 	//Values of the each slice
 $vchoice = "v".$choice;	
 $schoice = "s".$choice;	
-	$temp[] = array('v' => (float) ((100 * $r[$schoice])/650)); 
-	$temp[] = array('v' => (float) ($r[$vchoice])); 
+	$temp[] = array('v' => (float) ( $r[$schoice])); 
+	$temp[] = array('v' => (float) (($r[$vchoice]/100) * 650)); 
 	$rows[] = array('c' => $temp);
 }
 //}
