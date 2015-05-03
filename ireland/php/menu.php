@@ -6,7 +6,7 @@
       <!-- The justified navigation menu is meant for single line per list item.
            Multiple lines will require custom code not provided by Bootstrap. -->
       <div class="masthead">
-        <h3 class="text-muted">UK Elections and Polls</h3>
+        <h3 class="text-muted">Irish Elections and Polls</h3>
         <nav>
           <ul class="nav nav-justified">
             <li class="active"><a href="index.php">Home</a></li>
@@ -21,8 +21,8 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>UK Elections</h1>
-        <p class="lead">Looking at Opinion Polls, Votes, Seat returns and Proportionality of UK Elections.</p>
+        <h1>Irish Elections</h1>
+        <p class="lead">Looking at Opinion Polls, Votes, Seat returns and Proportionality of Irish Elections.</p>
         <!--p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p-->
       </div>
 
@@ -30,8 +30,7 @@
       <div class="row">
         <div class="col-lg-4">
           <h2>Opinion Pools</h2>
-          <p>In the run up to the May 2015, General Election.</p>
-          <p>The Line Chart shows how most of the parties have not changed much.</p>
+          <p>The Line Chart shows how most of the parties have not changed much since 2007.</p>
           <p><a class="btn btn-primary" href="polls.php" role="button">View details &raquo;</a></p>
         </div>
 
