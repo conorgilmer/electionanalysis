@@ -1,6 +1,13 @@
+<!-- Header  -->
 <?php include('php/header.php')?>
+
+<!-- Additions to header -->
+
+
+<!-- Menus -->
 <?php include('php/menu.php')?>
 
+<!-- Content -->
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1>Irish Elections</h1>
@@ -23,8 +30,6 @@
           <p><a class="btn btn-primary" href="prop.php" role="button">View details &raquo;</a></p>
         </div>
       </div>
-~                                                                                                                                                                             
-~                   
 
-
+<!-- Footer --->
 <?php include('php/footer.php')?>
