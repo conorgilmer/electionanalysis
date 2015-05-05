@@ -12,11 +12,16 @@ the publication or last date of an opinion polls was taken as the date of the po
 + added votes data and page line chart
 + added seats data and page line chart
 + make bootstrap
-+ added proportionality calculation and page
++ added proportionality calculation and page line graph for parties
++ added proportionality seats v votes 4 graph page
 
 *To Do*
 + add pie charts
++ add table to prop 
 + bar charts
 + prop bar chart
 + bounce positive and negative bar chart
 + common election main parites and others bar chart
++ page to add polls
++ page to add election results
+ 
