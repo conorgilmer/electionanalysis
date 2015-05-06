@@ -36,25 +36,25 @@
 
 
   $result = mysql_query($sql_query_seats);
-  echo "{ \"cols\": [ {\"id\":\"\",\"label\":\"Party\",\"pattern\":\"\",\"type\":\"string\"}, {\"id\":\"\",\"label\":\"Percentage\",\"pattern\":\"\",\"type\":\"number\"} ], \"rows\": [ ";
+  echo "{ \"cols\": [ {\"id\":\"\",\"label\":\"Party\",\"pattern\":\"\",\"type\":\"string\"}, {\"id\":\"\",\"label\":\"Seat Return Difference\",\"pattern\":\"\",\"type\":\"number\"} ], \"rows\": [ ";
   $total_rows = mysql_num_rows($result);
   $row_num = 0;
   while($row = mysql_fetch_array($result)){
     $row_num++;
     if ($row_num == $total_rows){
-      $bcons = $row['cons'] - $pcons;
-      $blab = $row['lab'] - $plab;
-      $blibdems = $row['libdems'] - $plibdems;
-      $bgreen = $row['green'] - $pgreen;
-      $bukip = $row['ukip'] - $pukip;
-      $bsnp = $row['snp'] - $psnp;
-      $bpc = $row['pc'] - $ppc;
-      $buup = $row['uup'] - $puup;
-      $bdup = $row['dup'] - $pdup;
-      $bsdlp = $row['sdlp'] - $psdlp;
-      $bsf = $row['sf'] - $psf;
-      $bapni = $row['apni'] - $papni;
-      $bothers = $row['others'] - $pothers;
+      $bcons = round($row['cons'] - $pcons);
+      $blab = round($row['lab'] - $plab);
+      $blibdems = round($row['libdems'] - $plibdems);
+      $bgreen = round($row['green'] - $pgreen);
+      $bukip = round($row['ukip'] - $pukip);
+      $bsnp = round($row['snp'] - $psnp);
+      $bpc = round($row['pc'] - $ppc);
+      $buup = round($row['uup'] - $puup);
+      $bdup = round($row['dup'] - $pdup);
+      $bsdlp = round($row['sdlp'] - $psdlp);
+      $bsf = round($row['sf'] - $psf);
+      $bapni = round($row['apni'] - $papni);
+      $bothers = round($row['others'] - $pothers);
       echo "{\"c\":[{\"v\":\"" . 'Conservatives' . "\",\"f\":null},{\"v\":" . $bcons . ",\"f\":null}]},";
       echo "{\"c\":[{\"v\":\"" . 'Labour' . "\",\"f\":null},{\"v\":" . $blab . ",\"f\":null}]},";
       echo "{\"c\":[{\"v\":\"" . 'Lib Dems' . "\",\"f\":null},{\"v\":" . $blibdems . ",\"f\":null}]},";
