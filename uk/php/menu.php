@@ -26,7 +26,7 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Proportionality <span class="caret"></span></a>
                 	<ul class="dropdown-menu" role="menu">
             		<li><a href="prop.php">Proportionality over time (Line Graphs)</a></li>
-            		<li><a href="propfour.php">Proportionality electionse (Bar Charts)</a></li>
+            		<li><a href="propfive.php">Proportionality electionse (Bar Charts)</a></li>
                 	</ul>
               		</li>
 
