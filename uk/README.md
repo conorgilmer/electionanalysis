@@ -15,6 +15,7 @@ the publication or last date of an opinion polls was taken as the date of the po
 + added proportionality calculation and page line graph for parties
 + added proportionality seats v votes 4 graph page
 + bounce positive and negative bar chart
++ move bounce to online website
 
 *To Do*
 + add pie charts
@@ -24,5 +25,4 @@ the publication or last date of an opinion polls was taken as the date of the po
 + common election main parites and others bar chart
 + page to add polls
 + page to add election results
-+ move bounce to online website
- 
++ add google analytics and piwik to online pages footer 
