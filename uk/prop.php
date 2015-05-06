@@ -15,14 +15,6 @@
       async: false
     }).responseText;
 
-    var jsonTableData = $.ajax({
-      url: "echos.php",
-      data: "q="+num,
-      dataType:"json",
-      async: false
-    }).responseText;
-
-  			var tabledata = new google.visualization.DataTable(jsonTableData);
 
                         // Create our data table out of JSON data loaded from server.
                         var data = new google.visualization.DataTable(jsonChartData);
@@ -37,9 +29,6 @@
                         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
                         chart.draw(data, options);
 
- 			// Instantiate and draw our table, passing in some options.
-			var table = new google.visualization.Table(document.getElementById('table_div'));
-    			table.draw(tabledata, {showRowNumber: true, alternatingRowStyle: true});
                 }
     </script>
 
@@ -72,7 +61,6 @@
   </select>
   </form>
   <div id="chart_div"></div>
-  <div id="table_div"></div>
         </div>
       </div>
 
