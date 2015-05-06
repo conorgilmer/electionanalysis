@@ -41,6 +41,7 @@ $queryData = mysql_query("
                 seats_uk.pc as spc,
                 seats_uk.uup as suup,
                 seats_uk.dup as sdup,
+                seats_uk.apni as sapni,
                 seats_uk.sdlp as ssdlp,
                 seats_uk.sf as ssf,
                 seats_uk.others as sothers,
@@ -55,6 +56,7 @@ $queryData = mysql_query("
                 vote_uk.pc as vpc,
                 vote_uk.uup as vuup,
                 vote_uk.dup as vdup,
+                vote_uk.apni as vapni,
                 vote_uk.sdlp as vsdlp,
                 vote_uk.sf as vsf,
                 vote_uk.others as vothers
@@ -74,6 +76,7 @@ $table['cols'] = array(
     array('label' => 'PC', 'type' => 'number'),
     array('label' => 'UUP', 'type' => 'number'),
     array('label' => 'DUP', 'type' => 'number'),
+    array('label' => 'APNI', 'type' => 'number'),
     array('label' => 'SDLP', 'type' => 'number'),
     array('label' => 'SF', 'type' => 'number'),
     array('label' => 'Others', 'type' => 'number')
@@ -96,6 +99,7 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) (100 * $r['pc']/$seats)); 
 	$temp[] = array('v' => (float) (100 * $r['uup']/$seats)); 
 	$temp[] = array('v' => (float) (100 * $r['dup']/$seats)); 
+	$temp[] = array('v' => (float) (100 * $r['apni']/$seats)); 
 	$temp[] = array('v' => (float) (100 * $r['sdlp']/$seats)); 
 	$temp[] = array('v' => (float) (100 * $r['sf']/$seats)); 
 	$temp[] = array('v' => (float) (100 * $r['others']/$seats)); 

@@ -37,6 +37,13 @@ $queryData = mysql_query("
                 libdems,
                 ukip,
                 green,
+                snp,
+                pc,
+                dup,
+                uup,
+                apni,
+                sdlp,
+                sf,
                 others
         FROM polls_uk ");
 
@@ -50,6 +57,13 @@ $table['cols'] = array(
     array('label' => 'Liberal Democrats', 'type' => 'number'),
     array('label' => 'Green', 'type' => 'number'),
     array('label' => 'UKIP', 'type' => 'number'),
+    array('label' => 'SNP', 'type' => 'number'),
+    array('label' => 'PC', 'type' => 'number'),
+    array('label' => 'DUP', 'type' => 'number'),
+    array('label' => 'UUP', 'type' => 'number'),
+    array('label' => 'APNI', 'type' => 'number'),
+    array('label' => 'SDLP', 'type' => 'number'),
+    array('label' => 'SF', 'type' => 'number'),
     array('label' => 'Others', 'type' => 'number')
 );
 //First Series
@@ -65,6 +79,13 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['libdems']); 
 	$temp[] = array('v' => (float) $r['green']); 
 	$temp[] = array('v' => (float) $r['ukip']); 
+	$temp[] = array('v' => (float) $r['snp']); 
+	$temp[] = array('v' => (float) $r['pc']); 
+	$temp[] = array('v' => (float) $r['dup']); 
+	$temp[] = array('v' => (float) $r['uup']); 
+	$temp[] = array('v' => (float) $r['apni']); 
+	$temp[] = array('v' => (float) $r['sdlp']); 
+	$temp[] = array('v' => (float) $r['sf']); 
 	$temp[] = array('v' => (float) $r['others']); 
 	$rows[] = array('c' => $temp);
 }

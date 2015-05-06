@@ -41,6 +41,7 @@ $queryData = mysql_query("
                 pc,
                 uup,
                 dup,
+                apni,
                 sdlp,
                 sf,
                 others
@@ -60,6 +61,7 @@ $table['cols'] = array(
     array('label' => 'PC', 'type' => 'number'),
     array('label' => 'UUP', 'type' => 'number'),
     array('label' => 'DUP', 'type' => 'number'),
+    array('label' => 'APNI', 'type' => 'number'),
     array('label' => 'SDLP', 'type' => 'number'),
     array('label' => 'SF', 'type' => 'number'),
     array('label' => 'Others', 'type' => 'number')
@@ -82,6 +84,7 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['pc']); 
 	$temp[] = array('v' => (float) $r['uup']); 
 	$temp[] = array('v' => (float) $r['dup']); 
+	$temp[] = array('v' => (float) $r['apni']); 
 	$temp[] = array('v' => (float) $r['sdlp']); 
 	$temp[] = array('v' => (float) $r['sf']); 
 	$temp[] = array('v' => (float) $r['others']); 
