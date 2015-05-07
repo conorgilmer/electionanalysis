@@ -30,6 +30,12 @@
       // Instantiate and draw our chart, passing in some options.
       var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
       chart.draw(data, {width: 500, height: 340});
+
+
+     // Instantiate and draw our chart, passing in some options.
+      var bar_chart = new google.visualization.BarChart(document.getElementById('chart_div_bar'));
+      bar_chart.draw(data, {title: 'Votes - Bar Chart', bars: 'horizontal',  width: 500, height: 340, legend: { position: 'none' },});
+
     }
 
     </script>
@@ -47,10 +53,23 @@
 
         <p class="lead">General Election <?echo  $_GET['year']?> Votes - Pie Chart</p>
 
+</div>
+        <div class="col-lg-4">
+
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
 
+</div>
+        <div class="col-lg-2">
+
+</div>
+        <div class="col-lg-4">
+    <!--Div that will hold the bar chart-->
+    <div id="chart_div_bar"></div>
+
    </div>
+
+
       </div>
 
 
