@@ -42,6 +42,7 @@
         <div class="col-lg-9">
  <h2>Opinion Polls UK 2015 - Line Graphs</h2>
 <p>Select a Graph for a part from the opinion polls or view all</p>
+<p>(Note there was no breakdown for smaller/regional parties from the data source, and very little polling if any done in the North of Ireland recently.)</p>
   <form>
   <select name="users" onchange="drawItems(this.value)">
   <option value="all">Select a Party:</option>
