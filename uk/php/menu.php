@@ -1,7 +1,7 @@
   </head>
 
   <body>
-
+<?php include_once("php/tracking.php") ?>
     <div class="container">
 
       <!-- Static navbar -->
