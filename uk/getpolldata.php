@@ -7,19 +7,20 @@
   if (!$con){ die('Could not connect: ' . mysql_error()); }
   mysql_select_db($dbname, $con);
   $result = mysql_query($sql_query);
-  echo "{ \"cols\": [ {\"id\":\"\",\"label\":\"Party\",\"pattern\":\"\",\"type\":\"string\"}, {\"id\":\"\",\"label\":\"Percentage\",\"pattern\":\"\",\"type\":\"number\"} ], \"rows\": [ ";
+  echo "{ \"cols\": [ {\"id\":\"\",\"label\":\"Party\",\"pattern\":\"\",\"type\":\"string\"}, {\"id\":\"\",\"label\":\"Percentage\",\"pattern\":\"\",\"type\":\"number\"}  , {\"id\":\"\",\"role\":\"style\",\"type\":\"string\"}  ], \"rows\": [ ";
   $total_rows = mysql_num_rows($result);
   $row_num = 0;
   while($row = mysql_fetch_array($result)){
     $row_num++;
     if ($row_num == $total_rows){
-      echo "{\"c\":[{\"v\":\"" . 'Conservatives' . "\",\"f\":null},{\"v\":" . $row['cons'] . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'Labour' . "\",\"f\":null},{\"v\":" . $row['lab'] . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'Liberal Democrats' . "\",\"f\":null},{\"v\":" . $row['libdems'] . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'Green' . "\",\"f\":null},{\"v\":" . $row['green'] . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'UKIP' . "\",\"f\":null},{\"v\":" . $row['ukip'] . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'SNP' . "\",\"f\":null},{\"v\":" . $row['snp'] . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null}]} ";
+echo "{\"c\":[{\"v\":\"" . 'Conservatives' . "\",\"f\":null},{\"v\":" . $row['cons'] . ",\"f\":null},{\"v\":\"#0000FF\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Labour' . "\",\"f\":null},{\"v\":" . $row['lab'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Lib Dems' . "\",\"f\":null},{\"v\":" . $row['libdems'] . ",\"f\":null},{\"v\":\"#FFA500\",\"f\":null}  ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Green' . "\",\"f\":null},{\"v\":" . $row['green'] . ",\"f\":null},{\"v\":\"#00FF00\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'UKIP' . "\",\"f\":null},{\"v\":" . $row['ukip'] . ",\"f\":null},{\"v\":\"#800080\",\"f\":null}  ]},";
+      echo "{\"c\":[{\"v\":\"" . 'SNP' . "\",\"f\":null},{\"v\":" . $row['snp'] . ",\"f\":null},{\"v\":\"#FFFF00\",\"f\":null}  ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null},{\"v\":\"#808000\",\"f\":null} ]} ";
+
     } else {
       echo "{\"c\":[{\"v\":\"" . 'others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null}]}, ";
     }

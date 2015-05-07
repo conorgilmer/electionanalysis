@@ -10,7 +10,6 @@
   if (!$con){ die('Could not connect: ' . mysql_error()); }
   mysql_select_db($dbname, $con);
 
-
   $result_votes = mysql_query($sql_query_votes);
 
   $total_rows_votes = mysql_num_rows($result_votes);
@@ -34,9 +33,8 @@
 	}
   }
 
-
   $result = mysql_query($sql_query_seats);
-  echo "{ \"cols\": [ {\"id\":\"\",\"label\":\"Party\",\"pattern\":\"\",\"type\":\"string\"}, {\"id\":\"\",\"label\":\"Seat Return Difference\",\"pattern\":\"\",\"type\":\"number\"} ], \"rows\": [ ";
+  echo "{ \"cols\": [ {\"id\":\"\",\"label\":\"Party\",\"pattern\":\"\",\"type\":\"string\"}, {\"id\":\"\",\"label\":\"Seat Return Difference\",\"pattern\":\"\",\"type\":\"number\"} , {\"id\":\"\",\"role\":\"style\",\"type\":\"string\"} ], \"rows\": [ ";
   $total_rows = mysql_num_rows($result);
   $row_num = 0;
   while($row = mysql_fetch_array($result)){
@@ -55,19 +53,19 @@
       $bsf = round($row['sf'] - $psf);
       $bapni = round($row['apni'] - $papni);
       $bothers = round($row['others'] - $pothers);
-      echo "{\"c\":[{\"v\":\"" . 'Conservatives' . "\",\"f\":null},{\"v\":" . $bcons . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'Labour' . "\",\"f\":null},{\"v\":" . $blab . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'Lib Dems' . "\",\"f\":null},{\"v\":" . $blibdems . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'Green' . "\",\"f\":null},{\"v\":" . $bgreen . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'UKIP' . "\",\"f\":null},{\"v\":" . $bukip . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'SNP' . "\",\"f\":null},{\"v\":" . $bsnp . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'PC' . "\",\"f\":null},{\"v\":" . $bpc . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'UUP' . "\",\"f\":null},{\"v\":" . $buup . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'DUP' . "\",\"f\":null},{\"v\":" . $bdup . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'SDLP' . "\",\"f\":null},{\"v\":" . $bsdlp . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'SF' . "\",\"f\":null},{\"v\":" . $bsf . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'APNI' . "\",\"f\":null},{\"v\":" . $bapni . ",\"f\":null}]},";
-      echo "{\"c\":[{\"v\":\"" . 'Others' . "\",\"f\":null},{\"v\":" . $bothers . ",\"f\":null}]} ";
+      echo "{\"c\":[{\"v\":\"" . 'Conservatives' . "\",\"f\":null},{\"v\":" . $bcons . ",\"f\":null},{\"v\":\"#0000FF\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Labour' . "\",\"f\":null},{\"v\":" . $blab . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Lib Dems' . "\",\"f\":null},{\"v\":" . $blibdems . ",\"f\":null},{\"v\":\"#FFA500\",\"f\":null}  ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Green' . "\",\"f\":null},{\"v\":" . $bgreen . ",\"f\":null},{\"v\":\"#00FF00\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'UKIP' . "\",\"f\":null},{\"v\":" . $bukip . ",\"f\":null},{\"v\":\"#800080\",\"f\":null}  ]},";
+      echo "{\"c\":[{\"v\":\"" . 'SNP' . "\",\"f\":null},{\"v\":" . $bsnp . ",\"f\":null},{\"v\":\"#FFFF00\",\"f\":null}  ]},";
+      echo "{\"c\":[{\"v\":\"" . 'PC' . "\",\"f\":null},{\"v\":" . $bpc . ",\"f\":null},{\"v\":\"#006400\",\"f\":null}     ]},";
+      echo "{\"c\":[{\"v\":\"" . 'UUP' . "\",\"f\":null},{\"v\":" . $buup . ",\"f\":null},{\"v\":\"#0000CD\",\"f\":null}  ]},";
+      echo "{\"c\":[{\"v\":\"" . 'DUP' . "\",\"f\":null},{\"v\":" . $bdup . ",\"f\":null},{\"v\":\"#000080\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'SDLP' . "\",\"f\":null},{\"v\":" . $bsdlp . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'SF' . "\",\"f\":null},{\"v\":" . $bsf . ",\"f\":null},{\"v\":\"#00FF00\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'APNI' . "\",\"f\":null},{\"v\":" . $bapni . ",\"f\":null},{\"v\":\"#FFFF00\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Others' . "\",\"f\":null},{\"v\":" . $bothers . ",\"f\":null},{\"v\":\"#808000\",\"f\":null} ]} ";
     } else {
 //      echo "{\"c\":[{\"v\":\"" . 'others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null}]}, ";
     }
