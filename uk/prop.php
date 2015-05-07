@@ -41,7 +41,7 @@
       <div class="row">
         <div class="col-lg-9">
  <h2>UK Westminister Election Proportionality - Line Graphs</h2>
-<p>Select a Party to compare vote share and seats acruing</p>
+<p>Select a Party to compare vote share and seats accruing</p>
   <form>
   <select name="users" onchange="drawItems(this.value)">
   <option value="all">Select a Party:</option>
