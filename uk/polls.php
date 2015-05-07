@@ -45,8 +45,8 @@
 <p>(Note there was no breakdown for smaller/regional parties from the data source, and very little polling if any done in the North of Ireland recently.)</p>
   <form>
   <select name="users" onchange="drawItems(this.value)">
-  <option value="all">Select a Party:</option>
-    <option value="all" selected >All</option>
+  <option value="all" selected>Select a Party:</option>
+    <option value="all">All</option>
     <option value="lab">Labour</option>
     <option value="cons">Conservatives</option>
     <option value="libdems">Liberal Democrats</option>
