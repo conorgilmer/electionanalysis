@@ -27,6 +27,16 @@
                         // Instantiate and draw our chart, passing in some options.
                         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
                         chart.draw(data, options);
+// a click handler which grabs some values then redirects the page
+        google.visualization.events.addListener(chart, 'select', function() {
+          // grab a few details before redirecting
+          var selection = chart.getSelection();
+          var row = selection[0].row;
+          var col = selection[0].column;
+          var year = data.getValue(row, 0);
+          location.href = 'votespie.php?row=' + row + '&col=' + col + '&year=' + year;
+        });
+
                 }
     </script>
 
