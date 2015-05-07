@@ -52,13 +52,13 @@
     <option value="libdems">Liberal Democrats</option>
     <option value="green">Green</option>
     <option value="ukip">UKIP</option>
-    <option value="snp">SNP</option>
+    <!--option value="snp">SNP</option>
     <option value="pc">Plaid Cymru</option>
     <option value="dup">DUP</option>
     <option value="uup">UUP</option>
+    <option value="apni">Alliance</option>
     <option value="sdlp">SDLP</option>
-    <option value="sf">Sinn Fein</option>
-    <option value="apni">Alliance</option-->
+    <option value="sf">Sinn Fein</option-->
     <option value="others">Others</option>
   </select>
   </form>
