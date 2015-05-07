@@ -16,6 +16,7 @@
     
     function drawChart() {
       var num = <?echo  $_GET['row']?>;
+	num = num + 1;
       var jsonData = $.ajax({
       url: "getseatdata.php",
       data: "q="+num,
