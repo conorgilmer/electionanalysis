@@ -18,7 +18,7 @@ echo "{\"c\":[{\"v\":\"" . 'Conservatives' . "\",\"f\":null},{\"v\":" . $row['co
       echo "{\"c\":[{\"v\":\"" . 'Lib Dems' . "\",\"f\":null},{\"v\":" . $row['libdems'] . ",\"f\":null},{\"v\":\"#FFA500\",\"f\":null}  ]},";
       echo "{\"c\":[{\"v\":\"" . 'Green' . "\",\"f\":null},{\"v\":" . $row['green'] . ",\"f\":null},{\"v\":\"#00FF00\",\"f\":null} ]},";
       echo "{\"c\":[{\"v\":\"" . 'UKIP' . "\",\"f\":null},{\"v\":" . $row['ukip'] . ",\"f\":null},{\"v\":\"#800080\",\"f\":null}  ]},";
-      echo "{\"c\":[{\"v\":\"" . 'SNP' . "\",\"f\":null},{\"v\":" . $row['snp'] . ",\"f\":null},{\"v\":\"#FFFF00\",\"f\":null}  ]},";
+//      echo "{\"c\":[{\"v\":\"" . 'SNP' . "\",\"f\":null},{\"v\":" . $row['snp'] . ",\"f\":null},{\"v\":\"#FFFF00\",\"f\":null}  ]},";
       echo "{\"c\":[{\"v\":\"" . 'Others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null},{\"v\":\"#808000\",\"f\":null} ]} ";
 
     } else {
