@@ -1,12 +1,9 @@
 <?php
    $q=$_GET["q"];
-  $dbuser="root";
-  $dbname="elections";
-  $dbpass="";
-  $dbserver="localhost";
+include('php/config.php');
 
   $sql_query = "SELECT ff, fg, lab, green, sf, others, pd from polls_ireland where id = $q";
-  $con = mysql_connect($dbserver,$dbuser,$dbpass);
+  $con = mysql_connect($dbhost,$dblogin,$dbpwd);
   if (!$con){ die('Could not connect: ' . mysql_error()); }
   mysql_select_db($dbname, $con);
   $result = mysql_query($sql_query);
