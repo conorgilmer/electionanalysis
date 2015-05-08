@@ -12,6 +12,7 @@
           <p>Well I am a political(electoral system) geek, I love looking at elections in countries and seeing how they reflect what the people want etc. No system is perfect, and some good systems produce bad results and viceversa</ref>.
           <p>Here I look at Irish general elections which use Proportional Representation - Single Transferrable Vote(PR-STV).</p>
       </div>
+      </div>
 
 
 <!-- footer -->
