@@ -1,7 +1,6 @@
-  
-<?php include('php/header.php');?>
-
-<!--Load the AJAX API-->
+<html>
+<head>
+  <!--Load the AJAX API-->
   <script type="text/javascript" src="http://www.google.com/jsapi"></script>
   <!--script type="text/javascript" src="jquery-1.9.1.min.js"></script-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -32,8 +31,9 @@
                 }
     </script>
 
-<?php include('php/menu.php');?>
 
+</head>
+<body>
 <h1>Opinion Polls Ireland - Line Chart</h1>
   <form>
   <select name="users" onchange="drawItems(this.value)">
@@ -53,5 +53,6 @@
   </select>
   </form>
   <div id="chart_div"></div>
-
-<?php include('php/footer.php');?>
+  <div id="table_div"></div>
+</body>
+</html>

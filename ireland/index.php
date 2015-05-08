@@ -1,13 +1,14 @@
-<!-- Header  -->
-<?php include('php/header.php')?>
+<!-- header -->
+<?php include('php/header.php'); ?>  
 
-<!-- Additions to header -->
+<!-- additional header stuff -->
+
+<!-- menu -->
+<?php include('php/menu.php'); ?>  
 
 
-<!-- Menus -->
-<?php include('php/menu.php')?>
+<!-- Content Start -->
 
-<!-- Content -->
       <!-- Jumbotron -->
       <div class="jumbotron">
         <h1>Irish Elections</h1>
@@ -19,17 +20,19 @@
       <div class="row">
         <div class="col-lg-4">
           <h2>Opinion Pools</h2>
-          <p>The Line Chart shows how most of the parties have not changed much since 2007.</p>
+          <p>The Line Chart shows how parties have changed since 2007
           <p><a class="btn btn-primary" href="polls.php" role="button">View details &raquo;</a></p>
         </div>
 
         <div class="col-lg-4">
           <h2>Proportionality</h2>
           <p>The crux of this is to look at how proportional is the representaion in a parliament from the votes cast for a particular party</p>
-          <p>The graph shows what percentage over or below of seats a party gets relative to its vote share, Ireland having Single Transferrable Vote - Proportional Representation, in all elections.</p>
+          <p>The graph shows what percentage over or below of seats a party gets relative to its vote share..</p>
           <p><a class="btn btn-primary" href="prop.php" role="button">View details &raquo;</a></p>
         </div>
       </div>
 
-<!-- Footer --->
-<?php include('php/footer.php')?>
+<!-- Content End -->
+
+<!-- footer -->
+<?php include('php/footer.php'); ?>  
