@@ -5,7 +5,7 @@
 # 
 #
 BEGIN {	FS = ","
-        seats = 650;
+        seats = 650;  #Hard coded for UK House of Commons, 166 for Dail 108 for NI Assembly
 	min =650
 	max = 0
 	print "\nElection Proportionality Report"
