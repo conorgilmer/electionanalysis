@@ -26,8 +26,9 @@ BEGIN {	FS = ","
 		over = vb + over; 
 } 
 END { 
-        printf "\n\tLow Bonus:\t%d",  min
-        printf "\n\tHigh Bonus:\t%d\n\n",  max
-        printf "\n\tUnder Rep:\t%.2f",  under
-        printf "\n\tOver Rep:\t%.2f\n\n",  over
+        printf "\n\tLow Bonus:\t%+d Seats",  min
+        printf "\n\tHigh Bonus:\t%+d Seats\n",  max
+	printf "\n\tShould be the same"
+        printf "\n\tUnder Representation:\t%+.2f %%",  under
+        printf "\n\tOver Representation:\t%+.2f %%\n\n",  over
 }

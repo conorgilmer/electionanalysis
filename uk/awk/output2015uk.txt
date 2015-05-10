@@ -1,0 +1,22 @@
+
+Election Proportionality Report
+
+Seats 650
+
+Party	Vote(%)	Seats	Proportional Seats	Bonus(%)	Bonus(Seats) 
+
+Cons	 36.90	331		239		+14.02		+91
+Lab	 30.40	232		197		+5.29		+34
+LibDems	 7.90	8		51		-6.67		-43
+UKIP	 12.40	1		80		-12.25		-79
+Greens	 3.80	1		24		-3.65		-23
+SNP	 4.60	56		29		+4.02		+26
+Others	 4.00	21		26		-0.77		-5
+
+	Low Bonus:	-79 Seats
+	High Bonus:	+91 Seats
+
+	Should be the same
+	Under Representation:	-23.33 %
+	Over Representation:	+23.33 %
+
