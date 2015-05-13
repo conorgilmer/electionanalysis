@@ -1,0 +1,22 @@
+
+Election Proportionality Report
+
+Seats 166
+
+Party	Vote(%)	Seats	Proportional Seats	Bonus(%)	Bonus(Seats) 
+
+FF	 41.56	77		68		+4.83		+8
+FG	 27.32	51		45		+3.40		+5
+Lab	 10.13	20		16		+1.92		+3
+PD	 2.73	2		4		-1.53		-2
+SF	 6.94	4		11		-4.53		-7
+Greens	 4.69	6		7		-1.08		-1
+Others	 6.63	5		11		-3.62		-6
+
+	Low Bonus:	-7 Seats
+	High Bonus:	+8 Seats
+
+	Should be the same
+	Under Representation:	-10.75 %
+	Over Representation:	+10.15 %
+
