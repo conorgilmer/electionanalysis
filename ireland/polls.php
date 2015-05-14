@@ -18,7 +18,7 @@
                         // Create our data table out of JSON data loaded from server.
                         var data = new google.visualization.DataTable(jsonChartData);
                         var options = {
-                                title: 'UK Opinion Polls of ' +num,
+                                title: 'Irish Opinion Polls of ' +num,
                                 width: 900,
                                 height: 500,
 				vAxis: {title: "Percentage"},
