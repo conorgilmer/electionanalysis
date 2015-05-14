@@ -17,40 +17,45 @@ include('php/config.php');
 echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff'] . ",\"f\":null},{\"v\":\"#008000\",\"f\":null} ]},";
       echo "{\"c\":[{\"v\":\"" . 'Fine Gael' . "\",\"f\":null},{\"v\":" . $row['fg'] . ",\"f\":null},{\"v\":\"#0000FF\",\"f\":null} ]},";
       echo "{\"c\":[{\"v\":\"" . 'Labour' . "\",\"f\":null},{\"v\":" . $row['lb'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
+
+	if ($row['sf']!= '0') {
       echo "{\"c\":[{\"v\":\"" . 'Sinn Fein' . "\",\"f\":null},{\"v\":" . $row['sf'] . ",\"f\":null},{\"v\":\"#32CD32\",\"f\":null}  ]},";
+}
+	if ($row['gp'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'Green' . "\",\"f\":null},{\"v\":" . $row['gp'] . ",\"f\":null},{\"v\":\"#00FF00\",\"f\":null} ]},";
-	if ($row['gp'] > 0) {
-      echo "{\"c\":[{\"v\":\"" . 'Progressive Democrats' . "\",\"f\":null},{\"v\":" . $row['pd'] . ",\"f\":null},{\"v\":\"#800080\",\"f\":null}  ]},";}
-	if ($row['un'] > 0) {
+}
+	if ($row['pd'] != '0') {
+      echo "{\"c\":[{\"v\":\"" . 'Progressive Democrats' . "\",\"f\":null},{\"v\":" . $row['pd'] . ",\"f\":null},{\"v\":\"#000080\",\"f\":null}  ]},";}
+	if ($row['un'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'Unionist' . "\",\"f\":null},{\"v\":" . $row['un'] . ",\"f\":null},{\"v\":\"#800080\",\"f\":null}  ]},"; }
-	if ($row['nal'] > 0) {
+	if ($row['nal'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'Nat Lab' . "\",\"f\":null},{\"v\":" . $row['nal'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
 }
-	if ($row['cnp'] > 0) {
-      echo "{\"c\":[{\"v\":\"" . 'CnaP' . "\",\"f\":null},{\"v\":" . $row['cnp'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
+	if ($row['cnp'] != '0') {
+      echo "{\"c\":[{\"v\":\"" . 'CnaP' . "\",\"f\":null},{\"v\":" . $row['cnp'] . ",\"f\":null},{\"v\":\"#008000\",\"f\":null} ]},";
 }
-	if ($row['wp'] > 0) {
-      echo "{\"c\":[{\"v\":\"" . 'WP' . "\",\"f\":null},{\"v\":" . $row['wp'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
+	if ($row['wp'] != '0') {
+      echo "{\"c\":[{\"v\":\"" . 'WP' . "\",\"f\":null},{\"v\":" . $row['wp'] . ",\"f\":null},{\"v\":\"#FF0011\",\"f\":null} ]},";
 }
-	if ($row['dl'] > 0) {
-      echo "{\"c\":[{\"v\":\"" . 'DL' . "\",\"f\":null},{\"v\":" . $row['dl'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
+	if ($row['dl'] != '0') {
+      echo "{\"c\":[{\"v\":\"" . 'DL' . "\",\"f\":null},{\"v\":" . $row['dl'] . ",\"f\":null},{\"v\":\"#FF00FF\",\"f\":null} ]},";
 }
-	if ($row['sp'] > 0) {
+	if ($row['sp'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'SP' . "\",\"f\":null},{\"v\":" . $row['sp'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
 }
-	if ($row['pb'] > 0) {
+	if ($row['pb'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'PBP' . "\",\"f\":null},{\"v\":" . $row['pb'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
 }
-	if ($row['ul'] > 0) {
+	if ($row['ul'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'UL' . "\",\"f\":null},{\"v\":" . $row['ul'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
 }
-	if ($row['fm'] > 0) {
+	if ($row['fm'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'FM/CnT' . "\",\"f\":null},{\"v\":" . $row['fm'] . ",\"f\":null},{\"v\":\"#FC0C0C\",\"f\":null} ]},";
 }
-	if ($row['cp'] > 0) {
+	if ($row['cp'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'Centre' . "\",\"f\":null},{\"v\":" . $row['cp'] . ",\"f\":null},{\"v\":\"#FFCC00\",\"f\":null} ]},";
 }
-	if ($row['nl'] > 0) {
+	if ($row['nl'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'Nat League' . "\",\"f\":null},{\"v\":" . $row['nl'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
 }
       echo "{\"c\":[{\"v\":\"" . 'Others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null},{\"v\":\"#808000\",\"f\":null} ]} ";
