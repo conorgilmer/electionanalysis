@@ -14,7 +14,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">UK Elections and Polls</a>
+            <a class="navbar-brand" href="#">Ireland Elections and Polls</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             	<ul class="nav navbar-nav">
