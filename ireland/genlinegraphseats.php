@@ -25,6 +25,7 @@ $queryData = mysql_query("
                 cp,
                 cnp,
                 nl,
+                un,
                 nal,
                 total,
                 others
@@ -46,6 +47,12 @@ $table['cols'] = array(
     array('label' => 'UL', 'type' => 'number'),
     array('label' => 'DL', 'type' => 'number'),
     array('label' => 'WP', 'type' => 'number'),
+    array('label' => 'CNP', 'type' => 'number'),
+    array('label' => 'Farmers', 'type' => 'number'),
+    array('label' => 'NL', 'type' => 'number'),
+    array('label' => 'CP', 'type' => 'number'),
+    array('label' => 'Nat Labour', 'type' => 'number'),
+    array('label' => 'Unionist', 'type' => 'number'),
     array('label' => 'Others', 'type' => 'number')
 );
 //First Series
@@ -58,7 +65,7 @@ while($r = mysql_fetch_assoc($queryData)) {
 	//Values of the each slice
 	$temp[] = array('v' => (float) $r['ff']); 
 	$temp[] = array('v' => (float) $r['fg']); 
-	$temp[] = array('v' => (float) $r['lab']); 
+	$temp[] = array('v' => (float) $r['lb']); 
 	$temp[] = array('v' => (float) $r['gp']); 
 	$temp[] = array('v' => (float) $r['sf']); 
 	$temp[] = array('v' => (float) $r['pd']); 
@@ -67,7 +74,12 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['ul']); 
 	$temp[] = array('v' => (float) $r['dl']); 
 	$temp[] = array('v' => (float) $r['wp']); 
-	$temp[] = array('v' => (float) $r['sf']); 
+	$temp[] = array('v' => (float) $r['cnp']); 
+	$temp[] = array('v' => (float) $r['fm']); 
+	$temp[] = array('v' => (float) $r['nl']); 
+	$temp[] = array('v' => (float) $r['cp']); 
+	$temp[] = array('v' => (float) $r['nal']); 
+	$temp[] = array('v' => (float) $r['un']); 
 	$temp[] = array('v' => (float) $r['others']); 
 	$rows[] = array('c' => $temp);
 }

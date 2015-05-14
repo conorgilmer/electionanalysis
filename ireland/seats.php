@@ -35,7 +35,7 @@
           var row = selection[0].row;
           var col = selection[0].column;
           var year = data.getValue(row, 0);
-          location.href = 'pollspie.php?row=' + row + '&col=' + col + '&year=' + year;
+          location.href = 'seatspie.php?row=' + row + '&col=' + col + '&year=' + year;
         });
 
                 }
@@ -67,6 +67,13 @@
     <option value="sp">Socialist Party</option>
     <option value="pb">People Before Profit</option>
     <option value="wp">Workers Party</option>
+    <option value="dl">Democratic Left</option>
+    <option value="cnp">Clann Na pobalachta</option>
+    <option value="nal">National Labour</option>
+    <option value="nl">National League</option>
+    <option value="fm">Farmers/CnaT</option>
+    <option value="cp">Centre Party</option>
+    <option value="un">Unionist</option>
     <option value="others">others</option>
   </select>
   </form>
