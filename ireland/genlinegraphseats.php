@@ -42,7 +42,7 @@ $table['cols'] = array(
     array('label' => 'Green', 'type' => 'number'),
     array('label' => 'SF', 'type' => 'number'),
     array('label' => 'PD', 'type' => 'number'),
-    array('label' => 'sp', 'type' => 'number'),
+    array('label' => 'SP', 'type' => 'number'),
     array('label' => 'PB', 'type' => 'number'),
     array('label' => 'UL', 'type' => 'number'),
     array('label' => 'DL', 'type' => 'number'),
