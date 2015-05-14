@@ -35,7 +35,7 @@
           var row = selection[0].row;
           var col = selection[0].column;
           var year = data.getValue(row, 0);
-          location.href = 'seatspie.php?row=' + row + '&col=' + col + '&year=' + year;
+          location.href = 'votespie.php?row=' + row + '&col=' + col + '&year=' + year;
         });
 
                 }
