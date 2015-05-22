@@ -27,6 +27,7 @@
                 	<ul class="dropdown-menu" role="menu">
             		<li><a href="prop.php">Proportionality over time (Line Graphs)</a></li>
             		<li><a href="propfive.php">Proportionality Elections (Bar/Pie Charts)</a></li>
+            		<li><a href="propavg.php">Proportionality Elections (High/Low/Avg)</a></li>
                 	</ul>
               		</li>
 
