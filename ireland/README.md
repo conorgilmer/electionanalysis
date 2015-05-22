@@ -6,3 +6,5 @@ Breakdown of parties, and map of the proportion of seats and votes. Measure prop
 + Seats
 + Votes
 + Proportionality
+
+The site should be live at www.conorgilmer.ie/elections/ireland/
