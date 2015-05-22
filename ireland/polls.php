@@ -35,7 +35,7 @@
           var row = selection[0].row;
           var col = selection[0].column;
           var year = data.getValue(row, 0);
-          location.href = 'pollspie.php?row=' + row + '&col=' + col + '&year=' + year;
+          location.href = 'pollspie.php?row=' + row + '&col=' + col + '&year=%27' + year+"%27";
         });
 
                 }

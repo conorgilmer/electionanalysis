@@ -2,7 +2,7 @@
    $q=$_GET["q"];
 include('php/config.php');
 
-  $sql_query = "SELECT ff, fg, lab, green, sf, others, pd from polls_ireland where id = $q";
+  $sql_query = "SELECT ff, fg, lab, green, sf, others, pd from polls_ireland where date = '$q'";
   $con = mysql_connect($dbhost,$dblogin,$dbpwd);
   if (!$con){ die('Could not connect: ' . mysql_error()); }
   mysql_select_db($dbname, $con);
@@ -14,7 +14,7 @@ include('php/config.php');
   while($row = mysql_fetch_array($result)){
     $row_num++;
     if ($row_num == $total_rows){
-echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff'] . ",\"f\":null},{\"v\":\"#008000\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff'] . ",\"f\":null},{\"v\":\"#008000\",\"f\":null} ]},";
       echo "{\"c\":[{\"v\":\"" . 'Fine Gael' . "\",\"f\":null},{\"v\":" . $row['fg'] . ",\"f\":null},{\"v\":\"#0000FF\",\"f\":null} ]},";
       echo "{\"c\":[{\"v\":\"" . 'Labour' . "\",\"f\":null},{\"v\":" . $row['lab'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
       echo "{\"c\":[{\"v\":\"" . 'Sinn Fein' . "\",\"f\":null},{\"v\":" . $row['sf'] . ",\"f\":null},{\"v\":\"#32CD32\",\"f\":null}  ]},";
