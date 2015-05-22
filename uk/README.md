@@ -2,6 +2,8 @@
 Seats and Vote share since 1979
 Calculate ratio of votes to seats and difference between seats share and vote share "bounce"
 
+The site should be live at www.conorgilmer.ie/elections/uk/
+
 ##UK Opinion polls since the 2015 general election was called
 the others section needs to be broken up to take into account the SNP i suppose
 google charts used 
