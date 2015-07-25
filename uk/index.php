@@ -31,6 +31,12 @@
           <p>The graph shows what percentage over or below of seats a party gets relative to its vote share..</p>
           <p><a class="btn btn-primary" href="prop.php" role="button">View details &raquo;</a></p>
         </div>
+
+        <div class="col-lg-4">
+          <h2>Ireland</h2>
+          <p>Ireland uses Proportional-Representation-Single Transferable Vote.</p>
+          <p><a class="btn btn-primary" href="../ireland/index.php" role="button">Ireland &raquo;</a></p>
+        </div>
       </div>
 
 <!-- Content End -->
