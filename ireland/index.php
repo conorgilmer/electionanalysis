@@ -30,6 +30,12 @@
           <p>The graph shows what percentage over or below of seats a party gets relative to its vote share..</p>
           <p><a class="btn btn-primary" href="prop.php" role="button">View details &raquo;</a></p>
         </div>
+
+        <div class="col-lg-4">
+          <h2>UK</h2>
+          <p>The UK uses the First Past the Post electoral system.</p>
+          <p><a class="btn btn-primary" href="../uk/index.php" role="button">UK &raquo;</a></p>
+        </div>
       </div>
 
 <!-- Content End -->
