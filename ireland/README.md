@@ -7,4 +7,10 @@ Breakdown of parties, and map of the proportion of seats and votes. Measure prop
 + Votes
 + Proportionality
 
-The site should be live at www.conorgilmer.ie/elections/ireland/
+The site should be live at www.conorgilmer.eu/elections/ireland/
+
++ Link to UK election analysis
+
+#To Do
++ open general graph on page open
++ add analysis of other PR systems, List Systems, AV/AV+
