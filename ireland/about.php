@@ -16,6 +16,8 @@
 	<p>I have aslo grouped together Offical SF, SFWP and WP, as well as Abstentionist SF, PSF, HBlock and Sinn Fein</p>
 	<p>Unionists I have kept, but perhaps I could interpret independents and map them with the Irish Unionists, such as the Trinity College TD up until 1937.</p>
 
+        <p>Others/Independents in opinion polls often includes minor parties, in some cases the green party, workers party, socialist party, people before profit, and more recently Renua and Social democrats</p>
+	<p>Alliance of Alliances - for 2016 the People Before Profit Alliance  (Socialist Workers Party and others) and the Anti-Austerity Alliance (Socialist Party and others) formed a pact to fight 2016, so the PBP-AAA are clumped together. In the 2011 election the PBP and Socialist party fought an election with Seamus Healys (WaUG) under the banner United Left, which got 5 TDs but 3 of them left Healy, Daly and Collins</p>
       </div>
       </div>
 
