@@ -14,6 +14,9 @@ $queryData = mysql_query("
                 lab,
                 sf,
                 pd,
+                SD,
+                wp,
+                IA,
                 green,
                 others
         FROM polls_ireland ");
@@ -29,6 +32,9 @@ $table['cols'] = array(
     array('label' => 'lab', 'type' => 'number'),
     array('label' => 'sf', 'type' => 'number'),
     array('label' => 'pd', 'type' => 'number'),
+    array('label' => 'SD', 'type' => 'number'),
+    array('label' => 'IA', 'type' => 'number'),
+    array('label' => 'wp', 'type' => 'number'),
     array('label' => 'green', 'type' => 'number'),
     array('label' => 'others', 'type' => 'number')
 );
@@ -45,6 +51,9 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['lab']); 
 	$temp[] = array('v' => (float) $r['sf']); 
 	$temp[] = array('v' => (float) $r['pd']); 
+	$temp[] = array('v' => (float) $r['SD']); 
+	$temp[] = array('v' => (float) $r['IA']); 
+	$temp[] = array('v' => (float) $r['wp']); 
 	$temp[] = array('v' => (float) $r['green']); 
 	$temp[] = array('v' => (float) $r['others']); 
 	$rows[] = array('c' => $temp);
@@ -75,9 +84,6 @@ $jsonTable = json_encode($table);
 echo $jsonTable;
 
 ?>
-
-
-
 
 
 

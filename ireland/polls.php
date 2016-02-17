@@ -67,6 +67,8 @@
     <option value="sp">Socialist Party</option>
     <option value="pb">People Before Profit</option>
     <option value="wp">Workers Party</option>
+    <option value="SD">Social Democrats</option>
+    <option value="IA">Independent Alliance</option>
     <option value="others">others</option>
   </select>
   </form>
