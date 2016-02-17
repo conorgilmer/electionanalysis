@@ -23,6 +23,7 @@ include('php/config.php');
       echo "{\"c\":[{\"v\":\"" . 'Social Democrats' . "\",\"f\":null},{\"v\":" . $row['SD'] . ",\"f\":null},{\"v\":\"#444080\",\"f\":null}  ]},";
       echo "{\"c\":[{\"v\":\"" . 'Independent Alliance' . "\",\"f\":null},{\"v\":" . $row['IA'] . ",\"f\":null},{\"v\":\"#111080\",\"f\":null}  ]},";
       echo "{\"c\":[{\"v\":\"" . 'Workers Party' . "\",\"f\":null},{\"v\":" . $row['wp'] . ",\"f\":null},{\"v\":\"#222222\",\"f\":null}  ]},";
+      echo "{\"c\":[{\"v\":\"" . 'PBPAAA' . "\",\"f\":null},{\"v\":" . $row['pbp'] . ",\"f\":null},{\"v\":\"#222222\",\"f\":null}  ]},";
       echo "{\"c\":[{\"v\":\"" . 'Others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null},{\"v\":\"#808000\",\"f\":null} ]} ";
 
     } else {

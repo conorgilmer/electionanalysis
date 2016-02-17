@@ -65,7 +65,7 @@
     <option value="green">Green</option>
     <option value="rn">ReNua</option>
     <option value="sp">Socialist Party</option>
-    <option value="pb">People Before Profit</option>
+    <option value="pbp">People Before Profit</option>
     <option value="wp">Workers Party</option>
     <option value="SD">Social Democrats</option>
     <option value="IA">Independent Alliance</option>
