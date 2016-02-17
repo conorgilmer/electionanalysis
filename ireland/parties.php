@@ -47,6 +47,9 @@
 	<h3>Workers Party</h3>
 	<p>Originated from the split in Sinn Fein in 1970, the party migrated from Official Sinn Fein, to Sinn Fein the Workers Party to The Workers Party. Greatly diminshed since the Split in 1992 which seen the party lose 6 TD's who formed the Democtatic Left. Running a number of candidates in the 2016 election.</p>
  
+	<h3>Right to Change</h3>
+	<p>A number of candidates and policial parties, such as Sinn Fein, AAA-PBP and other independents have signed up to its principles..</p>
+ 
 	<h3>Direct Democracy Ireland</h3>
 	<p>Idea based on swiss participatory democracy.</p>
 
@@ -56,6 +59,20 @@
 	<h3>Postmasters Union</h3>
 	<p>Running a small number of candidates in the 2016 election.</p>
  
+	<h3>Identity Ireland</h3>
+	<p>Grouping which is running is leader in the 2016 election.</p>
+	
+	<h3>Catholic Democrats (National Party) </h3>
+	<p>Conservative Catholic party founded in 1995 as the National Party, it  is running three candidates in the 2016 general election</p>
+	
+	<h3>Irish Democratic Party</h3>
+	<p>Founded in 2013,  it is running its chairperson in the 2016 election.</p>
+	
+	<h3>Communist Party of Ireland</h3>
+	<p>Its origins date back to 1933, had split and reformed over the years. Running a candidate in cork in the 2016 election.</p>
+	
+        <h3>Independents 4 Change</h3>
+	<p>Running a number of candidates in the 2016 election, such as Clare Daly TD and Mick Wallace TD..</p>
       </div>
       </div>
 
