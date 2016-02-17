@@ -14,3 +14,6 @@ The site should be live at www.conorgilmer.eu/elections/ireland/
 #To Do
 + open general graph on page open
 + add analysis of other PR systems, List Systems, AV/AV+
++ update polls consistently
++ add 2016 polls during election campaign
++ add pie chart for polls
