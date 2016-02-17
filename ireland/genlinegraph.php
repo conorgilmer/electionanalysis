@@ -14,6 +14,7 @@ $queryData = mysql_query("
                 lab,
                 sf,
                 pd,
+                rn,
                 SD,
                 wp,
                 pbp,
@@ -33,6 +34,7 @@ $table['cols'] = array(
     array('label' => 'lab', 'type' => 'number'),
     array('label' => 'sf', 'type' => 'number'),
     array('label' => 'pd', 'type' => 'number'),
+    array('label' => 'rn', 'type' => 'number'),
     array('label' => 'SD', 'type' => 'number'),
     array('label' => 'IA', 'type' => 'number'),
     array('label' => 'wp', 'type' => 'number'),
@@ -53,6 +55,7 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['lab']); 
 	$temp[] = array('v' => (float) $r['sf']); 
 	$temp[] = array('v' => (float) $r['pd']); 
+	$temp[] = array('v' => (float) $r['rn']); 
 	$temp[] = array('v' => (float) $r['SD']); 
 	$temp[] = array('v' => (float) $r['IA']); 
 	$temp[] = array('v' => (float) $r['wp']); 
