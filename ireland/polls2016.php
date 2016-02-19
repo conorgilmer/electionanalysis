@@ -9,7 +9,7 @@
                 google.load('visualization', '1', {'packages':['corechart']});
   function drawItems(num) {
     var jsonChartData = $.ajax({
-      url: "genlinegraph.php",
+      url: "genlinegraph2016.php",
       data: "q="+num,
       dataType:"json",
       async: false
