@@ -19,7 +19,13 @@
           <div id="navbar" class="navbar-collapse collapse">
             	<ul class="nav navbar-nav">
             		<li><a href="index.php">Home</a></li>
-            		<li><a href="polls.php">Polls</a></li>
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Polls <span class="caret"></span></a>
+                	<ul class="dropdown-menu" role="menu">
+            		<li><a href="polls.php">Polls(Line)</a></li>
+            		<li><a href="pollbarpie.php">Polls(Bar/Pie)</a></li>
+                	</ul>
+			</li>
             		<li><a href="votes.php">Votes</a></li>
             		<li><a href="seats.php">Seats</a></li>
 			<li class="dropdown">
@@ -29,6 +35,17 @@
             		<li><a href="propfive.php">Proportionality Elections (Bar/Pie Charts)</a></li>
             		<li><a href="propavg.php">Proportionality Elections (Average High Low Seat Bonus/Bounce)</a></li>
                 	</ul>
+			</li>
+
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Election 2016 <span class="caret"></span></a>
+                	<ul class="dropdown-menu" role="menu">
+            		<li><a href="polls2016.php">Opinion Polls During Campaign</a></li>
+                	</ul>
+
+			</li>
+
+            		<li><a href="parties.php">Parties</a></li>
               		</li>
 
 	    	</ul>
