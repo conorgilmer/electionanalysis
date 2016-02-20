@@ -9,7 +9,7 @@
   google.load('visualization', '1', {'packages':['corechart']});
   function drawChart(num) {
     var jsonChartData = $.ajax({
-      url: "getseatsdata.php",
+      url: "getapoll.php",
       data: "q="+num,
       dataType:"json",
       async: false
