@@ -90,7 +90,7 @@
 
   <form>
   <select name="users" onchange="drawChart(this.value)">
-  <option value="">Select an election :</option>
+  <option value="">Select an opinion poll :</option>
   <?php
   include('php/config.php');
 
