@@ -29,7 +29,7 @@
 
 
 	  <h3>Renua Ireland</h3>
-	  <p>Founded in 2015 from three former Fine Gael TDs and Senator who lost the party whip over Abortion, which they seen as breaking the election promise the party had made. Its leader is the former european minister Lucinda Creighton TD.</p>
+	  <p>Founded in 2015 from three former Fine Gael TDs and Senator who lost the party whip over Abortion, which they seen as breaking the election promise the party had made. Its leader is the former european minister Lucinda Creighton TD. Right of centre and pro-business, advocate a flat tax rate, many candidates would differ from founders and would advocate a removal of the ban on abortion, the party will have freedom of conscience on moral issues.</p>
 
 	  <h3>Sinn Fein</h3>
 	  <p>All-Ireland political party, claims it is the direct connection to Arthur Griffiths Sinn Fein in 1905, but the present party originates from Provisional wing in the 1970 split which also created the Offical Sinn Fein/Workers Party. In power sharing arrangement in the North of Ireland. Has been represented in the Dail since 1997, and presently has 14 tds, its leader is Gerry Adams TD.
@@ -39,7 +39,7 @@
 	  <p>Founded in 2015 from three Independent TDs, Stephen Donnelly elected as an Independent, Catherine Murphy an Independent TD who was formerly in the Workers Party, and Labour Party before winning a bye-election as an Indpendent, and regaining her seat in 2011, and Roisin Shorthall TD who left the labour party over Health minister allocating funding to projects in his constituency.
 </p>
 	  <h3>Anti-Austerity Alliance - People Before Profit</h3>
-	  <p>Founded in 2016, from an alliance of alliances to fight the general election. the AAA is an Alliance formed mainly from Socialist Party members, and the People Before Profit were formed largely from members of the Socialist Workers Party. Offically no leader, the party has 4 TDs, one from PBP and on from AAA/SP. In 2011 there was a similar alliance, called got Clare Daly and Joan Collins now indpendent, elected.
+	  <p>Founded in 2016, from an alliance of alliances to fight the general election. the AAA is an Alliance formed mainly from Socialist Party members, and the People Before Profit were formed largely from members of the Socialist Workers Party. Offically no leader, the party has 4 TDs, one from PBP and on from AAA/SP. In 2011 there was a similar alliance called ironically 'United Left', called got Clare Daly and Joan Collins now indpendent, elected as well as Healy of the WUAG, the alliance split during the 2011-2015 term over various issues.
 </p>
 	<h3>Independent Alliance</h3>
 	<p>Formed in 2015 with an eye on the 2016 election by Independent TD's Shane Ross and Michael Fitzmaurice. It currently has five TD's and two Senators.</p>
@@ -48,10 +48,13 @@
 	<p>Originated from the split in Sinn Fein in 1970, the party migrated from Official Sinn Fein, to Sinn Fein the Workers Party to The Workers Party. Greatly diminshed since the Split in 1992 which seen the party lose 6 TD's who formed the Democtatic Left. Running a number of candidates in the 2016 election.</p>
  
 	<h3>Right to Change</h3>
-	<p>A number of candidates and policial parties, such as Sinn Fein, AAA-PBP and other independents have signed up to its principles..</p>
+	<p>A number of candidates and policial parties, such as Sinn Fein, Direct Democracy Ireland, WAUG, AAA-PBP and other independents have signed up to its principles.</p>
  
+	<h3>Workers and Unemployed Group</h3>
+	<p>Tipperary based grouping, represented by TD Seamus Healy. Was affiliated to the United Left Alliance in 2011. Running Healy again in the enlarged Tipperary Constituency in 2016.</p>
+
 	<h3>Direct Democracy Ireland</h3>
-	<p>Idea based on swiss participatory democracy.</p>
+	<p>Idea based on swiss participatory democracy, running a number of candidates in the 2016 general election.</p>
 
 	<h3>Peoples Convention</h3>
 	<p>Endorses a number of Independents in the 2016 election.</p>
@@ -60,7 +63,7 @@
 	<p>Running a small number of candidates in the 2016 election.</p>
  
 	<h3>Identity Ireland</h3>
-	<p>Grouping which is running is leader in the 2016 election.</p>
+	<p>Grouping which is running is leader in the 2016 election, not on the political parties register.</p>
 	
 	<h3>Catholic Democrats (National Party) </h3>
 	<p>Conservative Catholic party founded in 1995 as the National Party, it  is running three candidates in the 2016 general election</p>
@@ -72,7 +75,7 @@
 	<p>Its origins date back to 1933, had split and reformed over the years. Running a candidate in cork in the 2016 election.</p>
 	
         <h3>Independents 4 Change</h3>
-	<p>Running a number of candidates in the 2016 election, such as Clare Daly TD and Mick Wallace TD..</p>
+	<p>Running a number of candidates in the 2016 election, such as TDs Joan Collins, Tommy Broughan,  Clare Daly and Mick Wallace. Registered in 2014.</p>
       </div>
       </div>
 
