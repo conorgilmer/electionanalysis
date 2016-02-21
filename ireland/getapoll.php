@@ -21,6 +21,18 @@ echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff']
 	if ($row['sf']!= '0') {
       echo "{\"c\":[{\"v\":\"" . 'Sinn Fein' . "\",\"f\":null},{\"v\":" . $row['sf'] . ",\"f\":null},{\"v\":\"#32CD32\",\"f\":null}  ]},";
 }
+
+	if ($row['IA']!= '0') {
+      echo "{\"c\":[{\"v\":\"" . 'IA' . "\",\"f\":null},{\"v\":" . $row['IA'] . ",\"f\":null},{\"v\":\"#32CFFF\",\"f\":null}  ]},";
+}
+
+	if ($row['SD']!= '0') {
+      echo "{\"c\":[{\"v\":\"" . 'SocDem' . "\",\"f\":null},{\"v\":" . $row['SD'] . ",\"f\":null},{\"v\":\"#32CFFF\",\"f\":null}  ]},";
+}
+
+	if ($row['rn']!= '0') {
+      echo "{\"c\":[{\"v\":\"" . 'Renua' . "\",\"f\":null},{\"v\":" . $row['rn'] . ",\"f\":null},{\"v\":\"#32CFFF\",\"f\":null}  ]},";
+}
 	if ($row['green'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'Green' . "\",\"f\":null},{\"v\":" . $row['green'] . ",\"f\":null},{\"v\":\"#00FF00\",\"f\":null} ]},";
 }
