@@ -112,13 +112,11 @@
 </div>
 </div>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
   <div id="polls_pie_div"></div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-6">
   <div id="polls_bar_div"></div>
-        </div>
-        <div class="col-lg-4">
         </div>
       </div>
 

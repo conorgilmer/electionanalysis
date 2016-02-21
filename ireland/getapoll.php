@@ -50,7 +50,7 @@ echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff']
 }*/
 	if ($row['wp'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'WP' . "\",\"f\":null},{\"v\":" . $row['wp'] . ",\"f\":null},{\"v\":\"#FF0011\",\"f\":null} ]},";
-}
+} else { $othersadd = $othersadd . "/" ."WP";}
 	if ($row['dl'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'DL' . "\",\"f\":null},{\"v\":" . $row['dl'] . ",\"f\":null},{\"v\":\"#FF00FF\",\"f\":null} ]},";
 }
@@ -78,14 +78,10 @@ echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff']
       echo "{\"c\":[{\"v\":\"" . 'Others'. $othersadd . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null},{\"v\":\"#808000\",\"f\":null} ]} ";
 
     } else {
-      echo "{\"c\":[{\"v\":\"" . 'others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null}]}, ";
+      echo "{\"c\":[{\"v\":\"" . 'Others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null}]}, ";
     }
   }
   echo " ] }";
-
-
-
-
 
   mysql_close($con);
 ?>
