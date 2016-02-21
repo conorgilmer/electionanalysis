@@ -43,11 +43,11 @@
 
       // Instantiate and draw our chart, passing in some options.
       var pie_chart = new google.visualization.PieChart(document.getElementById('polls_pie_div'));
-      pie_chart.draw(data, {title: 'Seats - Pie Chart', width: 500, height: 340});
+      pie_chart.draw(data, {title: 'Polls - Pie Chart', width: 500, height: 340});
 
       // Instantiate and draw our chart, passing in some options.
       var bar_chart = new google.visualization.BarChart(document.getElementById('polls_bar_div'));
-      bar_chart.draw(data, {title: 'Seats - Bar Chart', bars: 'horizontal',  width: 500, height: 340, legend: { position: 'none' },});
+      bar_chart.draw(data, {title: 'Polls - Bar Chart', bars: 'horizontal',  width: 500, height: 340, legend: { position: 'none' },});
 
       // proportional seats 
       // Create our data table out of JSON data loaded from server.
@@ -114,9 +114,9 @@
       <div class="row">
         <div class="col-lg-4">
   <div id="polls_pie_div"></div>
-  <div id="polls_bar_div"></div>
         </div>
         <div class="col-lg-4">
+  <div id="polls_bar_div"></div>
         </div>
         <div class="col-lg-4">
         </div>

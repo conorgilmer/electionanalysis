@@ -13,6 +13,7 @@ include('php/config.php');
   $row_num = 0;
   while($row = mysql_fetch_array($result)){
     $row_num++;
+    $othersadd = "";
     if ($row_num == $total_rows){
 echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff'] . ",\"f\":null},{\"v\":\"#008000\",\"f\":null} ]},";
       echo "{\"c\":[{\"v\":\"" . 'Fine Gael' . "\",\"f\":null},{\"v\":" . $row['fg'] . ",\"f\":null},{\"v\":\"#0000FF\",\"f\":null} ]},";
@@ -23,19 +24,19 @@ echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff']
 }
 
 	if ($row['IA']!= '0') {
-      echo "{\"c\":[{\"v\":\"" . 'IA' . "\",\"f\":null},{\"v\":" . $row['IA'] . ",\"f\":null},{\"v\":\"#32CFFF\",\"f\":null}  ]},";
-}
+      echo "{\"c\":[{\"v\":\"" . 'IA' . "\",\"f\":null},{\"v\":" . $row['IA'] . ",\"f\":null},{\"v\":\"#FFFF00\",\"f\":null}  ]},";
+} else { $othersadd = $othersadd . "/" ."IA";}
 
 	if ($row['SD']!= '0') {
-      echo "{\"c\":[{\"v\":\"" . 'SocDem' . "\",\"f\":null},{\"v\":" . $row['SD'] . ",\"f\":null},{\"v\":\"#32CFFF\",\"f\":null}  ]},";
-}
+      echo "{\"c\":[{\"v\":\"" . 'SocDem' . "\",\"f\":null},{\"v\":" . $row['SD'] . ",\"f\":null},{\"v\":\"#990099\",\"f\":null}  ]},";
+} else { $othersadd = $othersadd . "/" ."SD";}
 
 	if ($row['rn']!= '0') {
       echo "{\"c\":[{\"v\":\"" . 'Renua' . "\",\"f\":null},{\"v\":" . $row['rn'] . ",\"f\":null},{\"v\":\"#32CFFF\",\"f\":null}  ]},";
-}
+} else { $othersadd = $othersadd . "/" ."RN";}
 	if ($row['green'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'Green' . "\",\"f\":null},{\"v\":" . $row['green'] . ",\"f\":null},{\"v\":\"#00FF00\",\"f\":null} ]},";
-}
+} else { $othersadd = $othersadd . "/" ."GP";}
 	if ($row['pd'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'Progressive Democrats' . "\",\"f\":null},{\"v\":" . $row['pd'] . ",\"f\":null},{\"v\":\"#000080\",\"f\":null}  ]},";}
 
@@ -60,7 +61,7 @@ echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff']
       echo "{\"c\":[{\"v\":\"" . 'SP' . "\",\"f\":null},{\"v\":" . $row['sp'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
 }
 	if ($row['pbp'] != '0') {
-      echo "{\"c\":[{\"v\":\"" . 'PBP' . "\",\"f\":null},{\"v\":" . $row['pbp'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'PBP-AAA' . "\",\"f\":null},{\"v\":" . $row['pbp'] . ",\"f\":null},{\"v\":\"#990000\",\"f\":null} ]},";
 }
 /*	if ($row['ul'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'UL' . "\",\"f\":null},{\"v\":" . $row['ul'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
@@ -74,7 +75,7 @@ echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff']
 	if ($row['nl'] != '0') {
       echo "{\"c\":[{\"v\":\"" . 'Nat League' . "\",\"f\":null},{\"v\":" . $row['nl'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
 }*/
-      echo "{\"c\":[{\"v\":\"" . 'Others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null},{\"v\":\"#808000\",\"f\":null} ]} ";
+      echo "{\"c\":[{\"v\":\"" . 'Others'. $othersadd . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null},{\"v\":\"#808000\",\"f\":null} ]} ";
 
     } else {
       echo "{\"c\":[{\"v\":\"" . 'others' . "\",\"f\":null},{\"v\":" . $row['others'] . ",\"f\":null}]}, ";
