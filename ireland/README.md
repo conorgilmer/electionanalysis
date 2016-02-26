@@ -19,3 +19,4 @@ The site should be live at www.conorgilmer.eu/elections/ireland/
 + add analysis of other PR systems, List Systems, AV/AV+
 + update polls consistently
 + add 2016 section polls estimates and results
++ add poll of polls pie/bar
