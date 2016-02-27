@@ -20,4 +20,4 @@ The site should be live at www.conorgilmer.eu/elections/ireland/
 + update polls consistently
 + add 2016 section polls estimates and results
 + add poll of polls pie/bar
-+ add exit polls RTE and Irish Times
++ add exit polls RTE and Irish Times compare with poll of polls and of actual final result -pie and bar
