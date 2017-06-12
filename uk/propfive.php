@@ -3,9 +3,6 @@
 
 <!-- additional header stuff -->
 
- <!--Load the AJAX API-->
-  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script type="text/javascript">
 
   // Load the Visualization API and the chart package.
@@ -33,8 +30,13 @@
       async: false
     }).responseText;
 
-   
-   
+    var jsonBounceTableData = $.ajax({
+      url: "getbouncestable.php",
+      data: "q="+num,
+      dataType:"json",
+      async: false
+    }).responseText;
+
       // actual seats 
       // Create our data table out of JSON data loaded from server.
       var data = new google.visualization.DataTable(jsonChartData);
@@ -59,13 +61,17 @@
       var prop_bar_chart = new google.visualization.BarChart(document.getElementById('pseats_bar_div'));
       prop_bar_chart.draw(prop_data, {title: 'Proportional - Bar Chart', bars: 'horizontal',  width: 500, height: 340, legend: { position: 'none' },});
 
-
       // Bounce
       var bounce_data = new google.visualization.DataTable(jsonBounceData);
       // Instantiate and draw our chart, passing in some options.
       var bounce_bar_chart = new google.visualization.BarChart(document.getElementById('bounce_bar_div'));
-      bounce_bar_chart.draw(bounce_data, {title: 'Bonus - Bar Chart', bars: 'horizontal',  width: 500, height: 340, legend: { position: 'none' },});
+      bounce_bar_chart.draw(bounce_data, {title: 'Seat Bounce ', bars: 'horizontal',  width: 500, height: 340, legend: { position: 'none' },});
 
+
+      var bounce_tabledata = new google.visualization.DataTable(jsonBounceTableData);
+    // Instantiate and draw our table, passing in some options.
+    var table = new google.visualization.Table(document.getElementById('bounce_table_div'));
+    table.draw(bounce_tabledata, {showRowNumber: true, alternatingRowStyle: true});
     }
 
     </script>
@@ -106,14 +112,22 @@
 </div>
 </div>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
   <div id="seats_pie_div"></div>
+        </div>
+        <div class="col-lg-6">
   <div id="seats_bar_div"></div>
         </div>
-        <div class="col-lg-4">
+        </div>
+      <div class="row">
+        <div class="col-lg-6">
   <div id="pseats_pie_div"></div>
+        </div>
+        <div class="col-lg-6">
   <div id="pseats_bar_div"></div>
         </div>
+        </div>
+      <div class="row">
         <div class="col-lg-4">
   <div id="bounce_bar_div"></div>
   <div id="bounce_table_div"></div>
