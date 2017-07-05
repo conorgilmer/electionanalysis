@@ -113,26 +113,14 @@
 </div>
       <div class="row">
         <div class="col-lg-6">
-  <div id="seats_pie_div" style="border: 1px solid #ccc"></div>
+  <div id="seats_pie_div"></div>
+  <div id="seats_bar_div"></div>
+  <div id="bounce_bar_div"></div>
         </div>
         <div class="col-lg-6">
-  <div id="seats_bar_div" style="border: 1px solid #ccc"></div>
-        </div>
-        </div>
-      <div class="row">
-        <div class="col-lg-6">
-  <div id="pseats_pie_div" style="border: 1px solid #ccc"></div>
-        </div>
-        <div class="col-lg-6">
-  <div id="pseats_bar_div" style="border: 1px solid #ccc"></div>
-        </div>
-        </div>
-      <div class="row">
-        <div class="col-lg-6">
-  <div id="bounce_bar_div" style="border: 1px solid #ccc"></div>
-        </div>
-        <div class="col-lg-6">
-  <div id="bounce_table_div" style="border: 1px solid #ccc"></div>
+  <div id="pseats_pie_div"></div>
+  <div id="pseats_bar_div"></div>
+  <div id="bounce_table_div"></div>
         </div>
       </div>
 
