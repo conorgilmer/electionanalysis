@@ -42,7 +42,10 @@
 	  <p>Founded in 2016, from an alliance of alliances to fight the general election. the AAA is an Alliance formed mainly from Socialist Party members, and the People Before Profit were formed largely from members of the Socialist Workers Party. Offically no leader, the party has 4 TDs, one from PBP and on from AAA/SP. In 2011 there was a similar alliance called ironically 'United Left', called got Clare Daly and Joan Collins now indpendent, elected as well as Healy of the WUAG, the alliance split during the 2011-2015 term over various issues.
 </p>
 	<h3>Independent Alliance</h3>
-	<p>Formed in 2015 with an eye on the 2016 election by Independent TD's Shane Ross and Michael Fitzmaurice. It currently has five TD's and two Senators.</p>
+	<p>Formed in 2015 with an eye on the 2016 election by Independent TD's Shane Ross and Michael Fitzmaurice. It currently is part of the government, with Ross as a Minister and rotating junior ministries,  a number of its members left the alliance, including the TD Fitzmaurice and Senator Caughwell.</p>
+  
+	<h3>Rural Alliance</h3>
+	<p>Formed in 2016 following the general election, as the name suggests it includes a number of Indepdent TD's from rural ireland, including Mattie Mcgrath and Michael Collins.</p>
   
 	<h3>Workers Party</h3>
 	<p>Originated from the split in Sinn Fein in 1970, the party migrated from Official Sinn Fein, to Sinn Fein the Workers Party to The Workers Party. Greatly diminshed since the Split in 1992 which seen the party lose 6 TD's who formed the Democtatic Left. Running a number of candidates in the 2016 election.</p>
