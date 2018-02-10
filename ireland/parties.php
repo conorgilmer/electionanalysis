@@ -17,19 +17,19 @@
 
 	  
 	  <h3>Fine Gael</h3>
-	  <p>Center Right political party founded from a merger of the Cumann na nGaedheal(Pro-treaty side), National Centre Party and the National Guard (Blueshirts) in 1933. Affiliated to Christan Democrats in Europe, been in government in coalition with Labour and other parties over time. Largest party in the Dail and opinion polls since the 2011 election. Its leader is Enda Kenny TD.
+	  <p>Center Right political party founded from a merger of the Cumann na nGaedheal(Pro-treaty side), National Centre Party and the National Guard (Blueshirts) in 1933. Affiliated to Christan Democrats in Europe, been in government in coalition with Labour and other parties over time. Largest party in the Dail and opinion polls since the 2011 election. Its leader is Leo Varadkar TD..
           </p>
 
 	 <h3>Green Party</h3>
-	<P>Founded in 1981 as the ecology party, it used the moniker Green Alliances before using the name Green Party. First elected a leader in 2001, it was in a coalition with Fianna Fail from 2007 until 2011, when it lost all its TDs in the election. Its present leader is former TD Eamon Ryan.
+	<P>Founded in 1981 as the ecology party, it used the moniker Green Alliances before using the name Green Party. First elected a leader in 2001, it was in a coalition with Fianna Fail from 2007 until 2011, when it lost all its TDs in the election. Its present leader is Eamon Ryan, who was re-elected in 2016..
 </p>
 	  <h3>Labour</h3>
-	  <p>Centre Left party founded in 1912 by James Connolly, James Larkin and William O'Brien. Has formed governments with Fine Gael in coalition and in the multi party governments. Has been subject to splits (National Labour 1944-1950) and mergers Democratic Left (1999). In government with Fine Gael since 2011 when it had its best electoral result ever, Its leader is Joan Burton TD.
+	  <p>Centre Left party founded in 1912 by James Connolly, James Larkin and William O'Brien. Has formed governments with Fine Gael in coalition and in the multi party governments. Has been subject to splits (National Labour 1944-1950) and mergers Democratic Left (1999). In government with Fine Gael from 2011 when it had its best electoral result ever, until 2016 when it was reduced to seven seats. Its leader is Brendan Howlin TD.
           </p>
 
 
 	  <h3>Renua Ireland</h3>
-	  <p>Founded in 2015 from three former Fine Gael TDs and Senator who lost the party whip over Abortion, which they seen as breaking the election promise the party had made. Its leader is the former european minister Lucinda Creighton TD. Right of centre and pro-business, advocate a flat tax rate, many candidates would differ from founders and would advocate a removal of the ban on abortion, the party will have freedom of conscience on moral issues.</p>
+	  <p>Founded in 2015 from three former Fine Gael TDs and Senator who lost the party whip over Abortion, which they seen as breaking the election promise the party had made. Its leader is the former european minister Lucinda Creighton TD. Right of centre and pro-business, advocate a flat tax rate. It lost all its seats in 2016, although polling over 2% entitiling the party to some state funding, Creighton narrowly stood down as leader, the party currently has two councillors.</p>
 
 	  <h3>Sinn Fein</h3>
 	  <p>All-Ireland political party, claims it is the direct connection to Arthur Griffiths Sinn Fein in 1905, but the present party originates from Provisional wing in the 1970 split which also created the Offical Sinn Fein/Workers Party. In power sharing arrangement in the North of Ireland. Has been represented in the Dail since 1997, and presently has 14 tds, its leader is Gerry Adams TD.
