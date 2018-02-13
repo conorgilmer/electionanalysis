@@ -36,7 +36,7 @@
           </p>
 
 	  <h3>Social Democrats</h3>
-	  <p>Founded in 2015 from three Independent TDs, Stephen Donnelly elected as an Independent, Catherine Murphy an Independent TD who was formerly in the Workers Party, and Labour Party before winning a bye-election as an Indpendent, and regaining her seat in 2011, and Roisin Shorthall TD who left the labour party over Health minister allocating funding to projects in his constituency.
+	  <p>Founded in 2015 from three Independent TDs, Stephen Donnelly elected as an Independent, Catherine Murphy an Independent TD who was formerly in the Workers Party, and Labour Party before winning a bye-election as an Indpendent, and regaining her seat in 2011, and Roisin Shorthall TD who left the labour party over Health minister allocating funding to projects in his constituency. Retrained its 3 seats in the 2016 election, but Donnelly defected from the party reducing it to 2 seats.
 </p>
 	  <h3>Anti-Austerity Alliance - People Before Profit</h3>
 	  <p>Founded in 2016, from an alliance of alliances to fight the general election. the AAA is an Alliance formed mainly from Socialist Party members, and the People Before Profit were formed largely from members of the Socialist Workers Party. Offically no leader, the party has 4 TDs, one from PBP and on from AAA/SP. In 2011 there was a similar alliance called ironically 'United Left', called got Clare Daly and Joan Collins now indpendent, elected as well as Healy of the WUAG, the alliance split during the 2011-2015 term over various issues.
