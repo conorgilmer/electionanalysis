@@ -29,7 +29,7 @@
 
 
 	  <h3>Renua Ireland</h3>
-	  <p>Founded in 2015 from three former Fine Gael TDs and Senator who lost the party whip over Abortion, which they seen as breaking the election promise the party had made. Its leader is the former european minister Lucinda Creighton TD. Right of centre and pro-business, advocate a flat tax rate. It lost all its seats in 2016, although polling over 2% entitiling the party to some state funding, Creighton narrowly stood down as leader, the party currently has two councillors.</p>
+	  <p>Founded in 2015 from three former Fine Gael TDs and Senator who lost the party whip over Abortion, which they seen as breaking the election promise the party had made. Its leader is the former european minister Lucinda Creighton TD. Right of centre and pro-business, advocate a flat tax rate. It lost all its seats in 2016, although polling over 2% entitiling the party to some state funding, Creighton narrowly lost her seat and stood down as leader, the party currently has two councillors.</p>
 
 	  <h3>Sinn Fein</h3>
 	  <p>All-Ireland political party, claims it is the direct connection to Arthur Griffiths Sinn Fein in 1905, but the present party originates from Provisional wing in the 1970 split which also created the Offical Sinn Fein/Workers Party. In power sharing arrangement in the North of Ireland. Has been represented in the Dail since 1997, and presently has 14 tds, its leader is Gerry Adams TD.
@@ -38,9 +38,9 @@
 	  <h3>Social Democrats</h3>
 	  <p>Founded in 2015 from three Independent TDs, Stephen Donnelly elected as an Independent, Catherine Murphy an Independent TD who was formerly in the Workers Party, and Labour Party before winning a bye-election as an Indpendent, and regaining her seat in 2011, and Roisin Shorthall TD who left the labour party over Health minister allocating funding to projects in his constituency. Retrained its 3 seats in the 2016 election, but Donnelly defected from the party reducing it to 2 seats.
 </p>
-	  <h3>Anti-Austerity Alliance - People Before Profit</h3>
+	  <h3>Solidarity/Anti-Austerity Alliance - People Before Profit</h3>
 	  <p>Founded in 2016, from an alliance of alliances to fight the general election. the AAA is an Alliance formed mainly from Socialist Party members, and the People Before Profit were formed largely from members of the Socialist Workers Party. Offically no leader, the party has 4 TDs, one from PBP and on from AAA/SP. In 2011 there was a similar alliance called ironically 'United Left', called got Clare Daly and Joan Collins now indpendent, elected as well as Healy of the WUAG, the alliance split during the 2011-2015 term over various issues.
-</p>
+In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence the alliance is known as Solidarity-People Before Profit</p>
 	<h3>Independent Alliance</h3>
 	<p>Formed in 2015 with an eye on the 2016 election by Independent TD's Shane Ross and Michael Fitzmaurice. It currently is part of the government, with Ross as a Minister and rotating junior ministries,  a number of its members left the alliance, including the TD Fitzmaurice and Senator Caughwell.</p>
   
@@ -79,6 +79,12 @@
 	
         <h3>Independents 4 Change</h3>
 	<p>Running a number of candidates in the 2016 election, such as TDs Joan Collins, Tommy Broughan,  Clare Daly and Mick Wallace. Registered in 2014.</p>
+
+       <h3>National Party</h3>
+       <p>Is a conservative party founded in 2016. It is socially conservative and anti-european union federalisma</p?.
+
+       <h3>Irexit Freedom pary</h3>
+       <p>An party campaigning for Ireland to leave the European Union, founded in 2018.
       </div>
       </div>
 
