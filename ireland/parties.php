@@ -63,6 +63,10 @@ In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence t
 	<h3>Direct Democracy Ireland</h3>
 	<p>Idea based on swiss participatory democracy, running a number of candidates in the 2016 general election.</p>
 
+
+	<h3>Republican Sinn Fein</h3>
+e<p>Split from Sinn Fein over the decision to recognise the Dail in the 1980's. So not registered as they dont recognise the government, and candidates are technically independents..</p>
+
 	<h3>Eirigi</h3>
 	<p>Another left wing spit from Sinn Fein originally a pressure group it is registered as a political party.</p>
  
