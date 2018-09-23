@@ -56,9 +56,16 @@ In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence t
 	<h3>Workers and Unemployed Group</h3>
 	<p>Tipperary based grouping, represented by TD Seamus Healy. Was affiliated to the United Left Alliance in 2011. Running Healy again in the enlarged Tipperary Constituency in 2016.</p>
 
+	<h3>Christian Solidarity Party</h3>
+	<p>Founded in the 1990's, its registration has lapse but it has run members in general elections, bye-elections and for the councils unsuccessfully. It often makes presentations to oireachtas committees on social issues, as the party name would suggest.</p>
+
+
 	<h3>Direct Democracy Ireland</h3>
 	<p>Idea based on swiss participatory democracy, running a number of candidates in the 2016 general election.</p>
 
+	<h3>Eirigi</h3>
+	<p>Another left wing spit from Sinn Fein originally a pressure group it is registered as a political party.</p>
+ 
 	<h3>Peoples Convention</h3>
 	<p>Endorses a number of Independents in the 2016 election.</p>
  
