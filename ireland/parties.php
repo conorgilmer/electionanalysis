@@ -92,10 +92,10 @@ e<p>Split from Sinn Fein over the decision to recognise the Dail in the 1980's. 
 	<p>Running a number of candidates in the 2016 election, such as TDs Joan Collins, Tommy Broughan,  Clare Daly and Mick Wallace. Registered in 2014.</p>
 
        <h3>National Party</h3>
-       <p>Is a conservative party founded in 2016. It is socially conservative and anti-european union federalisma</p?.
+       <p>Is a conservative party founded in 2016. It is socially conservative and anti-european union federalism. </p>.
 
        <h3>Irexit Freedom pary</h3>
-       <p>An party campaigning for Ireland to leave the European Union, founded in 2018.
+       <p>An party campaigning for Ireland to leave the European Union, founded in 2018.</p>
       </div>
       </div>
 
