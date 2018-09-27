@@ -29,6 +29,10 @@
 
 	 <h3>Green Party</h3>
 	<P>Founded in 1981 as the ecology party, it used the moniker Green Alliances before using the name Green Party. First elected a leader in 2001, it was in a coalition with Fianna Fail from 2007 until 2011, when it lost all its TDs in the election. Its present leader is Eamon Ryan, who was re-elected in 2016..
+          <ul>
+          <li><a target="_blank" href="https://www.greenparty.ie"> www.greenparty.ie</a></li>
+</ul>
+
 </p>
 	  <h3>Labour</h3>
 	  <p>Centre Left party founded in 1912 by James Connolly, James Larkin and William O'Brien. Has formed governments with Fine Gael in coalition and in the multi party governments. Has been subject to splits (National Labour 1944-1950) and mergers Democratic Left (1999). In government with Fine Gael from 2011 when it had its best electoral result ever, until 2016 when it was reduced to seven seats. Its leader is Brendan Howlin TD.
@@ -40,10 +44,14 @@
 
 
 	  <h3>Renua Ireland</h3>
-	  <p>Founded in 2015 from three former Fine Gael TDs and Senator who lost the party whip over Abortion, which they seen as breaking the election promise the party had made. Its leader is the former european minister Lucinda Creighton TD. Right of centre and pro-business, advocate a flat tax rate. It lost all its seats in 2016, although polling over 2% entitiling the party to some state funding, Creighton narrowly lost her seat and stood down as leader, the party currently has two councillors.</p>
+	  <p>Founded in 2015 from three former Fine Gael TDs and Senator who lost the party whip over Abortion, which they seen as breaking the election promise the party had made. Its leader is the former european minister Lucinda Creighton TD. Right of centre and pro-business, advocate a flat tax rate. It lost all its seats in 2016, although polling over 2% entitiling the party to some state funding, Creighton narrowly lost her seat and stood down as leader, the party currently has two councillors. Cllr John Leahy is its leader.</p>
+          <ul>
+          <li><a target="_blank" href="https://www.renuaireland.com"> www.renuaireland.com</a></li>
+</ul>
+
 
 	  <h3>Sinn Fein</h3>
-	  <p>All-Ireland political party, claims it is the direct connection to Arthur Griffiths Sinn Fein in 1905, but the present party originates from Provisional wing in the 1970 split which also created the Offical Sinn Fein/Workers Party. In power sharing arrangement in the North of Ireland. Has been represented in the Dail since 1997, and presently has 14 tds, its leader is Gerry Adams TD.
+	  <p>All-Ireland political party, claims it is the direct connection to Arthur Griffiths Sinn Fein in 1905, but the present party originates from Provisional wing in the 1970 split which also created the Offical Sinn Fein/Workers Party. In power sharing arrangement in the North of Ireland. Has been represented in the Dail since 1997, and presently has 24 tds, its long timeleader Gerry Adams TD, stood down to be replaced by Mary Lou McDonald.
           <ul>
           <li><a target="_blank" href="https://www.sinnfein.ie"> www.sinnfein.ie</a></li>
 </ul>
@@ -51,19 +59,44 @@
           </p>
 
 	  <h3>Social Democrats</h3>
-	  <p>Founded in 2015 from three Independent TDs, Stephen Donnelly elected as an Independent, Catherine Murphy an Independent TD who was formerly in the Workers Party, and Labour Party before winning a bye-election as an Indpendent, and regaining her seat in 2011, and Roisin Shorthall TD who left the labour party over Health minister allocating funding to projects in his constituency. Retrained its 3 seats in the 2016 election, but Donnelly defected from the party reducing it to 2 seats.
+	  <p>Founded in 2015 from three Independent TDs, Stephen Donnelly elected as an Independent, Catherine Murphy an Independent TD who was formerly in the Workers Party, and Labour Party before winning a bye-election as an Indpendent, and regaining her seat in 2011, and Roisin Shorthall TD who left the labour party over Health minister allocating funding to projects in his constituency. Retained its 3 seats in the 2016 election, but Donnelly defected from the party reducing it to 2 seats. It has a number of Councilors..
+          <ul>
+          <li><a target="_blank" href="https://www.socialdemocrats.ie"> www.socialdemocrats.ie</a></li>
+</ul>
+
 </p>
 	  <h3>Solidarity/Anti-Austerity Alliance - People Before Profit</h3>
 	  <p>Founded in 2016, from an alliance of alliances to fight the general election. the AAA is an Alliance formed mainly from Socialist Party members, and the People Before Profit were formed largely from members of the Socialist Workers Party. Offically no leader, the party has 4 TDs, one from PBP and on from AAA/SP. In 2011 there was a similar alliance called ironically 'United Left', called got Clare Daly and Joan Collins now indpendent, elected as well as Healy of the WUAG, the alliance split during the 2011-2015 term over various issues.
-In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence the alliance is known as Solidarity-People Before Profit</p>
+In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence the alliance is known as Solidarity-People Before Profit.
+
+          <ul>
+          <li><a target="_blank" href="https://www.solidarity.ie"> www.solidarity.ie</a></li>
+          <li><a target="_blank" href="http://www.pbp.ie"> www.pbp.ie</a></li>
+          <li><a target="_blank" href="http://www.swp.ie"> www.swp.ie</a></li>
+          <li><a target="_blank" href="http://www.socialistparty.ie"> www.socialistparty.ie</a></li>
+</ul>
+
+</p>
 	<h3>Independent Alliance</h3>
-	<p>Formed in 2015 with an eye on the 2016 election by Independent TD's Shane Ross and Michael Fitzmaurice. It currently is part of the government, with Ross as a Minister and rotating junior ministries,  a number of its members left the alliance, including the TD Fitzmaurice and Senator Caughwell.</p>
+	<p>Formed in 2015 with an eye on the 2016 election by Independent TD's Shane Ross and Michael Fitzmaurice. It currently is part of the government, with Ross as a Minister and rotating junior ministries,  a number of its members left the alliance, including the TD Fitzmaurice and Senator Caughwell.
+
+          <ul>
+          <li><a target="_blank" href="http://www.independentalliance.ie"> www.independentalliance.ie</a></li>
+</ul>
+
+</p>
   
 	<h3>Rural Alliance</h3>
 	<p>Formed in 2016 following the general election, as the name suggests it includes a number of Indepdent TD's from rural ireland, including Mattie Mcgrath and Michael Collins.</p>
   
 	<h3>Workers Party</h3>
-	<p>Originated from the split in Sinn Fein in 1970, the party migrated from Official Sinn Fein, to Sinn Fein the Workers Party to The Workers Party. Greatly diminshed since the Split in 1992 which seen the party lose 6 TD's who formed the Democtatic Left. Running a number of candidates in the 2016 election.</p>
+	<p>Originated from the split in Sinn Fein in 1970, the party migrated from Official Sinn Fein, to Sinn Fein the Workers Party to The Workers Party. Greatly diminshed since the Split in 1992 which seen the party lose 6 TD's who formed the Democtatic Left. Once Councillor in Cork was elected, but it lost its long serving councillor in Waterford. A Dublin Independent Cllr joined the party.
+
+          <ul>
+          <li><a target="_blank" href="http://www.workersparty.ie"> www.workersparty.ie</a></li>
+</ul>
+
+</p>
  
 	<h3>Right to Change</h3>
 	<p>A number of candidates and policial parties, such as Sinn Fein, Direct Democracy Ireland, WAUG, AAA-PBP and other independents have signed up to its principles.</p>
@@ -80,37 +113,78 @@ In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence t
 
 
 	<h3>Republican Sinn Fein</h3>
-<p>Split from Sinn Fein over the decision to recognise the Dail in the 1980's. So not registered as they dont recognise the government, and candidates are technically independents..</p>
+<p>Split from Sinn Fein over the decision to recognise the Dail in the 1980's. So not registered as they dont recognise the government, and candidates are technically independents..
+          <ul>
+          <li><a target="_blank" href="http://www.rsf.ie"> www.rsf.ie</a></li>
+</ul>
+
+</p>
 
 	<h3>Eirigi</h3>
-	<p>Another left wing spit from Sinn Fein originally a pressure group it is registered as a political party.</p>
+	<p>Another left wing spit from Sinn Fein originally a pressure group it is registered as a political party.
+          <ul>
+          <li><a target="_blank" href="https://www.eirigi.org"> www.eirigi.org</a></li>
+</ul>
+
+</p>
  
 	<h3>Peoples Convention</h3>
-	<p>Endorses a number of Independents in the 2016 election.</p>
+	<p>Endorses a number of Independents in the 2016 election.
+          <ul>
+          <li><a target="_blank" href="https://www.cppc.ie"> www.cppc.ie</a></li>
+</ul>
+
+</p>
  
-	<h3>Postmasters Union</h3>
-	<p>Running a small number of candidates in the 2016 election.</p>
  
 	<h3>Identity Ireland</h3>
-	<p>Grouping which is running is leader in the 2016 election, not on the political parties register.</p>
+	<p>Grouping which is running is leader in the 2016 election, not on the political parties register at the time, it did register and run in the carlow killkenny bye-election without success.
+
+          <ul>
+          <li><a target="_blank" href="https://www.identityireland.org"> www.identityireland.org</a></li>
+</ul>
+</p>
 	
 	<h3>Catholic Democrats (National Party) </h3>
-	<p>Conservative Catholic party founded in 1995 as the National Party, it  is running three candidates in the 2016 general election</p>
+	<p>Conservative Catholic party founded in 1995 as the National Party, it  is ran three candidates in the 2016 general election without success.</p>
 	
 	<h3>Irish Democratic Party</h3>
-	<p>Founded in 2013,  it is running its chairperson in the 2016 election.</p>
+	<p>Founded in 2013,  it is ran its chairperson unsuccessfully in the 2016 election. Not much from them since but the website is still up.
+          <ul>
+          <li><a target="_blank" href="http://www.irishdemocraticparty.ie"> www.irishdemocraticparty.ie</a></li>
+</ul>
+
+</p>
 	
 	<h3>Communist Party of Ireland</h3>
-	<p>Its origins date back to 1933, had split and reformed over the years. Running a candidate in cork in the 2016 election.</p>
+	<p>Its origins date back to 1933, had split and reformed over the years. It ran a candidate in cork in the 2016 election.
+
+          <ul>
+          <li><a target="_blank" href="http://www.communistpartyofireland.ie"> www.communistpartyofireland.ie</a></li>
+</ul>
+
+</p>
 	
         <h3>Independents 4 Change</h3>
 	<p>Running a number of candidates in the 2016 election, such as TDs Joan Collins, Tommy Broughan,  Clare Daly and Mick Wallace. Registered in 2014.</p>
 
        <h3>National Party</h3>
-       <p>Is a conservative party founded in 2016. It is socially conservative and anti-european union federalism. </p>.
+       <p>Is a conservative party founded in 2016. It is socially conservative and anti-european union federalism. 
+
+          <ul>
+          <li><a target="_blank" href="https://www.nationalparty.ie"> www.nationalparty.ie</a></li>
+</ul>
+
+</p>
 
        <h3>Irexit Freedom pary</h3>
-       <p>An party campaigning for Ireland to leave the European Union, founded in 2018.</p>
+       <p>An party campaigning for Ireland to leave the European Union, founded in 2018.
+
+          <ul>
+          <li><a target="_blank" href="https://www.irexitfreedom.ie"> www.irexitfreedom.ie</a></li>
+</ul>
+
+</p>
       </div>
       </div>
 
