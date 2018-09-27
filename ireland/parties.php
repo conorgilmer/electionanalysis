@@ -21,6 +21,10 @@
 	  
 	  <h3>Fine Gael</h3>
 	  <p>Center Right political party founded from a merger of the Cumann na nGaedheal(Pro-treaty side), National Centre Party and the National Guard (Blueshirts) in 1933. Affiliated to Christan Democrats in Europe, been in government in coalition with Labour and other parties over time. Largest party in the Dail and opinion polls since the 2011 election. Its leader is Leo Varadkar TD..
+          <ul>
+          <li><a target="_blank" href="https://www.finegael.ie"> www.finegael.ie</a></li>
+</ul>
+
           </p>
 
 	 <h3>Green Party</h3>
@@ -28,6 +32,10 @@
 </p>
 	  <h3>Labour</h3>
 	  <p>Centre Left party founded in 1912 by James Connolly, James Larkin and William O'Brien. Has formed governments with Fine Gael in coalition and in the multi party governments. Has been subject to splits (National Labour 1944-1950) and mergers Democratic Left (1999). In government with Fine Gael from 2011 when it had its best electoral result ever, until 2016 when it was reduced to seven seats. Its leader is Brendan Howlin TD.
+          <ul>
+          <li><a target="_blank" href="https://www.labour.ie"> www.labour.ie</a></li>
+</ul>
+
           </p>
 
 
@@ -36,6 +44,10 @@
 
 	  <h3>Sinn Fein</h3>
 	  <p>All-Ireland political party, claims it is the direct connection to Arthur Griffiths Sinn Fein in 1905, but the present party originates from Provisional wing in the 1970 split which also created the Offical Sinn Fein/Workers Party. In power sharing arrangement in the North of Ireland. Has been represented in the Dail since 1997, and presently has 14 tds, its leader is Gerry Adams TD.
+          <ul>
+          <li><a target="_blank" href="https://www.sinnfein.ie"> www.sinnfein.ie</a></li>
+</ul>
+
           </p>
 
 	  <h3>Social Democrats</h3>
