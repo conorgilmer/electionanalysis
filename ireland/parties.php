@@ -13,6 +13,9 @@
 	  
 	  <h3>Fianna Fail</h3>
 	  <p>Center Catch all Party founded in 1927 by Eamon De Valera out of the anti-treaty side from the civil war. First elected as government in 1932, and been in power for the majority of the time since. Devestated in the 2011 election reduced to 20 seats.  Its leader is Micheal Martin TD.
+          <ul>
+          <li><a target="_blank" href="https://www.fiannafail.ie"> www.fiannafail.ie</a></li>
+</ul>
           </p>
 
 	  
@@ -65,7 +68,7 @@ In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence t
 
 
 	<h3>Republican Sinn Fein</h3>
-e<p>Split from Sinn Fein over the decision to recognise the Dail in the 1980's. So not registered as they dont recognise the government, and candidates are technically independents..</p>
+<p>Split from Sinn Fein over the decision to recognise the Dail in the 1980's. So not registered as they dont recognise the government, and candidates are technically independents..</p>
 
 	<h3>Eirigi</h3>
 	<p>Another left wing spit from Sinn Fein originally a pressure group it is registered as a political party.</p>
