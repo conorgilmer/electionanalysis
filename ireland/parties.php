@@ -109,7 +109,12 @@ In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence t
 
 
 	<h3>Direct Democracy Ireland</h3>
-	<p>Idea based on swiss participatory democracy, running a number of candidates in the 2016 general election.</p>
+	<p>Idea based on swiss participatory democracy, ran  a number of candidates in the 2016 general election.
+          <ul>
+          <li><a target="_blank" href="https://www.directdemocracyireland.ie"> www.directdemocracyireland.ie</a></li>
+</ul>
+	
+	</p>
 
 
 	<h3>Republican Sinn Fein</h3>
@@ -177,7 +182,7 @@ In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence t
 
 </p>
 
-       <h3>Irexit Freedom pary</h3>
+       <h3>Irexit Freedom Party</h3>
        <p>An party campaigning for Ireland to leave the European Union, founded in 2018.
 
           <ul>
