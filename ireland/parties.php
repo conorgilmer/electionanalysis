@@ -12,7 +12,7 @@
           <p>An overview of Irish political parties who are running candidates in the 2016 general election.</p>
 	  
 	  <h3>Fianna Fail</h3>
-	  <p>Center Catch all Party founded in 1927 by Eamon De Valera out of the anti-treaty side from the civil war. First elected as government in 1932, and been in power for the majority of the time since. Devestated in the 2011 election reduced to 20 seats.  Its leader is Micheal Martin TD.
+	  <p>Center Catch all Party founded in 1927 by Eamon De Valera out of the anti-treaty side from the civil war. First elected as government in 1932, and been in power for the majority of the time since. Devestated in the 2011 election reduced to 20 seats.It doubled its seat tally in 2016.  Its leader is Micheal Martin TD.
           <ul>
           <li><a target="_blank" href="https://www.fiannafail.ie"> www.fiannafail.ie</a></li>
 </ul>
@@ -87,7 +87,7 @@ In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence t
 </p>
   
 	<h3>Rural Alliance</h3>
-	<p>Formed in 2016 following the general election, as the name suggests it includes a number of Indepdent TD's from rural ireland, including Mattie Mcgrath and Michael Collins.</p>
+	<p>Formed in 2016 following the general election, as the name suggests it includes a number of Independent TD's from rural ireland, including Mattie Mcgrath and Michael Collins.</p>
   
 	<h3>Workers Party</h3>
 	<p>Originated from the split in Sinn Fein in 1970, the party migrated from Official Sinn Fein, to Sinn Fein the Workers Party to The Workers Party. Greatly diminshed since the Split in 1992 which seen the party lose 6 TD's who formed the Democtatic Left. Once Councillor in Cork was elected, but it lost its long serving councillor in Waterford. A Dublin Independent Cllr joined the party.
