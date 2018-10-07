@@ -97,6 +97,13 @@ In 2017 the Anti-Austerity Alliance renamed itself <b>Solidarity</b> and hence t
 </ul>
 
 </p>
+
+<h3>Irish Socialist Network</h3>
+<p>Former Workers Party activists involoved in anti-bin charges movement. Seem to be inactive and not running candidates.</p>
+
+<h3>Irish Republican Socialist Party</h3>
+<p>Breakaway from Offical Sinn Fein, not registered as a political party but has run candidates in the past. Seem to be active in demonstrations about housing.</p>
+
  
 	<h3>Right to Change</h3>
 	<p>A number of candidates and policial parties, such as Sinn Fein, Direct Democracy Ireland, WAUG, AAA-PBP and other independents have signed up to its principles.</p>
