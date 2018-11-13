@@ -10,3 +10,8 @@ In a way the traditional voting method, is often the least proportional. A natio
 
 ##AV - Alternative Vote
 Use in Australia, and anumber of other juristicions, and defeated in a Referendum in the UK. Is another attempt at providing a proportional system of voting.
+
+
+#To do
++convert pages to bootstrap
++use mysqli to read in the data for php7
