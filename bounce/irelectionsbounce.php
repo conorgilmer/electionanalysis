@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT * FROM seats_ire where election = $election";
+$sql = "SELECT * FROM seats_ire where election = '$election'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -28,11 +28,12 @@ if ($result->num_rows > 0) {
 	array_push($seats, $row["ff"], $row["fg"], $row["lb"], $row["gp"], $row["sf"]);
     }
 } else {
+    echo "results from ". $election;
     echo "0 results";
 }
 
 
-$sql = "SELECT * FROM votes_ire where source = $election";
+$sql = "SELECT * FROM votes_ire where source = '$election'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -72,6 +73,13 @@ $_SESSION['votes'] = $votes;
         <option value='2011'>Dail 2011</option>
         <option value='2007'>Dail 2007</option>
         <option value='2002'>Dail 2002</option>
+        <option value='1997'>Dail 1997</option>
+        <option value='1992'>Dail 1992</option>
+        <option value='1989'>Dail 1989</option>
+        <option value='1987'>Dail 1987</option>
+        <option value='1977'>Dail 1977</option>
+        <option value='1982b'>Dail 1982 Nov</option>
+        <option value='1982a'>Dail 1982</option>
      </select>
 
 </p>
