@@ -17,5 +17,10 @@ Use in Australia, and anumber of other juristicions, and defeated in a Referendu
 
 
 # To do
-+convert pages to bootstrap
-+use mysqli to read in the data for php7
++ extend irish to include pre 1932 elections and parties, add recent parties
++ add text to pages
++ add european elections
++ add NI assembly elections
++ track parties bonus relative to being in power or opposition
++ convert pages to bootstrap
++ use mysqli to read in the data for php7

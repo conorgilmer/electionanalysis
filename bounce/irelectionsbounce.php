@@ -41,19 +41,19 @@ if ($result->num_rows > 0) {
 	array_push($votes, $row["ff"], $row["fg"], $row["lb"], $row["gp"], $row["sf"]);
 	array_push($votes, $row["sp"], $row["pb"], $row["ul"], $row["dl"], $row["wp"], $row["ri"], $row["pd"], $row["others"]);
 	array_push($prseats, 
-			($allseats*$row["ff"]/100), 
-			($allseats*$row["fg"]/100), 
-			($allseats*$row["lb"]/100), 
-			($allseats*$row["gp"]/100), 
-			($allseats*$row["sf"]/100), 
-			($allseats*$row["sp"]/100), 
-			($allseats*$row["pb"]/100), 
-			($allseats*$row["ul"]/100), 
-			($allseats*$row["dl"]/100), 
-			($allseats*$row["wp"]/100), 
-			($allseats*$row["ri"]/100), 
-			($allseats*$row["pd"]/100), 
-			($allseats*$row["others"]/100) 
+			round($allseats*$row["ff"]/100), 
+			round($allseats*$row["fg"]/100), 
+			round($allseats*$row["lb"]/100), 
+			round($allseats*$row["gp"]/100), 
+			round($allseats*$row["sf"]/100), 
+			round($allseats*$row["sp"]/100), 
+			round($allseats*$row["pb"]/100), 
+			round($allseats*$row["ul"]/100), 
+			round($allseats*$row["dl"]/100), 
+			round($allseats*$row["wp"]/100), 
+			round($allseats*$row["ri"]/100), 
+			round($allseats*$row["pd"]/100), 
+			round($allseats*$row["others"]/100) 
 		);
     }
 } else {

@@ -40,20 +40,20 @@ if ($result->num_rows > 0) {
 	array_push($votes, $row["cons"], $row["lab"], $row["libdems"], $row["ukip"], $row["green"], $row["snp"]);
 	array_push($votes, $row["pc"], $row["bnp"], $row["dup"], $row["uup"], $row["apni"], $row["sdlp"], $row["sf"], $row["others"]);
 	array_push($prseats, 
-			($allseats*$row["cons"]/100), 
-			($allseats*$row["lab"]/100), 
-			($allseats*$row["libdems"]/100), 
-			($allseats*$row["ukip"]/100), 
-			($allseats*$row["green"]/100), 
-			($allseats*$row["snp"]/100), 
-			($allseats*$row["pc"]/100), 
-			($allseats*$row["bnp"]/100), 
-			($allseats*$row["dup"]/100), 
-			($allseats*$row["uup"]/100), 
-			($allseats*$row["apni"]/100), 
-			($allseats*$row["sdlp"]/100), 
-			($allseats*$row["sf"]/100), 
-			($allseats*$row["others"]/100) );
+			round($allseats*$row["cons"]/100), 
+			round($allseats*$row["lab"]/100), 
+			round($allseats*$row["libdems"]/100), 
+			round($allseats*$row["ukip"]/100), 
+			round($allseats*$row["green"]/100), 
+			round($allseats*$row["snp"]/100), 
+			round($allseats*$row["pc"]/100), 
+			round($allseats*$row["bnp"]/100), 
+			round($allseats*$row["dup"]/100), 
+			round($allseats*$row["uup"]/100), 
+			round($allseats*$row["apni"]/100), 
+			round($allseats*$row["sdlp"]/100), 
+			round($allseats*$row["sf"]/100), 
+			round($allseats*$row["others"]/100) );
     }
 } else {
     echo "0 results";
@@ -86,16 +86,19 @@ $_SESSION['votes'] = $votes;
      </select>
 
 </p>
+<h3>Votes Percentage</h3>
 <img src="bounceukgen.php?year=<?php echo $election;?>&graphtype=votes"/>
 <br/>
 <?php
 
 $_SESSION['seats'] = $seats;?>
+<h3>Seats</h3>
 <img src="bounceukgen.php?year=<?php echo $election;?>&graphtype=seats"/>
 <br/>
 
 <?php
 $_SESSION['prseats'] = $prseats;?>
+<h3>Seats if releative to vote</h3>
 <img src="bounceukgen.php?year=<?php echo $election;?>&graphtype=prseats"/>
 <br/>
 <?php
@@ -105,4 +108,5 @@ for ($b=0; $b < sizeof($seats); $b++){
 
 
 $_SESSION['bounce'] = $bounce;?>
+<h3>Seat Bonus</h3>
 <img src="bounceukgen.php?year=<?php echo $election;?>&graphtype=bounce"/>
