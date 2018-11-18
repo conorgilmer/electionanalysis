@@ -42,6 +42,7 @@ $votes=$_SESSION['bounce'];
             'LB'=>$votes[2],
             'GP'=>$votes[3],
             'SF'=>$votes[4],
+            'Others'=>$votes[5],
         );
         
         //Create new graph 
