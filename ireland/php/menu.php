@@ -23,6 +23,7 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Polls <span class="caret"></span></a>
                 	<ul class="dropdown-menu" role="menu">
             		<li><a href="polls.php">Polls(Line)</a></li>
+            		<li><a href="piebar.php">Select Polls(Bar/Pie)</a></li>
             		<li><a href="pollbarpie.php">Polls(Bar/Pie)</a></li>
                 	</ul>
 			</li>
