@@ -3,11 +3,12 @@
    include('php/config.php');
 
     $choice = $_GET["q"]; 
-    $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
-    mysql_select_db($dbname);    
+  //  $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
+   // mysql_select_db($dbname);    
 	
 // The Chart table contain two fields: Date and PercentageChange
-$queryData = mysql_query("
+//$queryData = mysql_query("
+$queryData = "
   SELECT	date,
                 ff,
                 fg,
@@ -29,8 +30,16 @@ $queryData = mysql_query("
                 nal,
                 total,
                 others
-        FROM seats_ire ");
+        FROM seats_ire ";
 
+// Create connection
+$conn = new mysqli($dbhost, $dblogin, $dbpwd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$result = $conn->query($queryData);
 
 if ($choice == 'all') {
 $table = array();
@@ -57,7 +66,11 @@ $table['cols'] = array(
 );
 //First Series
 $rows = array();
-while($r = mysql_fetch_assoc($queryData)) {
+//while($r = mysql_fetch_assoc($queryData)) {
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($r = $result->fetch_assoc()) {
+
 	$temp = array();
 	// the following line will used to slice the Pie chart
 	$temp[] = array('v' => (string) $r['date']); 
@@ -83,6 +96,10 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['others']); 
 	$rows[] = array('c' => $temp);
 }
+} else {
+    echo "0 results";
+}
+
 }
 else {
 $table = array();
@@ -92,7 +109,13 @@ $table['cols'] = array(
 );
 //First Series
 $rows = array();
-while($r = mysql_fetch_assoc($queryData)) {
+//while($r = mysql_fetch_assoc($queryData)) {
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($r = $result->fetch_assoc()) {
+
+	
 	$temp = array();
 	// the following line will used to slice the Pie chart
 	$temp[] = array('v' => (string) $r['date']); 
@@ -101,6 +124,13 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r[$choice]); 
 	$rows[] = array('c' => $temp);
 }
+
+
+} else {
+    echo "0 results";
+}
+
+
 }
 
 $table['rows'] = $rows;
