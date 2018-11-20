@@ -1,7 +1,5 @@
 <?php
-
    include('config.php');
-
 function getName($name) {
 if ($name =='cons') {
 	$nameText = "Conservatives";
@@ -25,12 +23,20 @@ else if ($name =='others') {
 }
 return $nameText;
 }
-    $choice = $_GET["q"]; 
-    $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
-    mysql_select_db($dbname);    
-	
+    $choice = $_GET["q"];
+//    $db =  mysqli_connect($dbhost,$dblogin,$dbpwd, $dbname);
+    //$db =  mysql_connect($dbhost,$dblogin,$dbpwd);
+    //mysql_select_db($dbname);
 // The Chart table contain two fields: Date and PercentageChange
-$queryData = mysql_query("
+//$queryData = mysqli_query($db, "
+
+$conn = new mysqli($dbhost, $dblogin, $dbpwd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$queryData ="
   SELECT	date,
                 cons,
                 lab,
@@ -45,8 +51,9 @@ $queryData = mysql_query("
                 sdlp,
                 sf,
                 others
-        FROM vote_uk ");
+        FROM vote_uk ";
 
+$result = $conn->query($queryData);
 
 if ($choice == 'all') {
 $table = array();
@@ -67,8 +74,13 @@ $table['cols'] = array(
     array('label' => 'Others', 'type' => 'number')
 );
 //First Series
+//$rows = array();
+//while($r = mysql_fetch_assoc($queryData)) {
+
+if ($result->num_rows > 0) {
 $rows = array();
-while($r = mysql_fetch_assoc($queryData)) {
+//while($r = mysql_fetch_assoc($queryData)) {
+while($r = $result->fetch_assoc()) {
 	$temp = array();
 	// the following line will used to slice the Pie chart
 	$temp[] = array('v' => (string) $r['date']); 
@@ -78,7 +90,6 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['lab']); 
 	$temp[] = array('v' => (float) $r['libdems']); 
 	$temp[] = array('v' => (float) $r['green']); 
-	$temp[] = array('v' => (float) $r['ukip']); 
 	$temp[] = array('v' => (float) $r['ukip']); 
 	$temp[] = array('v' => (float) $r['snp']); 
 	$temp[] = array('v' => (float) $r['pc']); 
@@ -90,6 +101,12 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['others']); 
 	$rows[] = array('c' => $temp);
 }
+} else {
+    echo "0 results";
+}
+
+
+
 }
 else {
 $table = array();
@@ -98,8 +115,15 @@ $table['cols'] = array(
     array('label' => getName($choice), 'type' => 'number')
 );
 //First Series
+//$rows = array();
+//while($r = mysqli_fetch_assoc($queryData)) {
+
+//First Series
 $rows = array();
-while($r = mysql_fetch_assoc($queryData)) {
+//while($r = mysql_fetch_assoc($queryData)) {
+while($r = $result->fetch_assoc()) {
+
+
 	$temp = array();
 	// the following line will used to slice the Pie chart
 	$temp[] = array('v' => (string) $r['date']); 
