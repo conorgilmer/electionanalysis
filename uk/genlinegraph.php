@@ -26,11 +26,19 @@ else if ($name =='others') {
 return $nameText;
 }
     $choice = $_GET["q"]; 
-    $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
-    mysql_select_db($dbname);    
+ //   $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
+   // mysql_select_db($dbname);
+
+$conn = new mysqli($dbhost, $dblogin, $dbpwd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
 	
 // The Chart table contain two fields: Date and PercentageChange
-$queryData = mysql_query("
+//$queryData = mysql_query("
+$queryData = "
   SELECT	date,
                 cons,
                 lab,
@@ -45,7 +53,9 @@ $queryData = mysql_query("
                 sdlp,
                 sf,
                 others
-        FROM polls_uk ");
+        FROM polls_uk ";
+
+$result = $conn->query($queryData);
 
 
 if ($choice == 'all') {
@@ -59,18 +69,12 @@ $table['cols'] = array(
     array('label' => 'UKIP', 'type' => 'number'),
     array('label' => 'Others', 'type' => 'number')
 );
-   /* array('label' => 'SNP', 'type' => 'number'),
-    array('label' => 'PC', 'type' => 'number'),
-    array('label' => 'DUP', 'type' => 'number'),
-    array('label' => 'UUP', 'type' => 'number'),
-    array('label' => 'APNI', 'type' => 'number'),
-    array('label' => 'SDLP', 'type' => 'number'),
-    array('label' => 'SF', 'type' => 'number'),
-    array('label' => 'Others', 'type' => 'number')
-);*/
 //First Series
+if ($result->num_rows > 0) {
 $rows = array();
-while($r = mysql_fetch_assoc($queryData)) {
+//while($r = mysql_fetch_assoc($queryData)) {
+while($r = $result->fetch_assoc()) {
+
 	$temp = array();
 	// the following line will used to slice the Pie chart
 	$temp[] = array('v' => (string) $r['date']); 
@@ -81,16 +85,13 @@ while($r = mysql_fetch_assoc($queryData)) {
 	$temp[] = array('v' => (float) $r['libdems']); 
 	$temp[] = array('v' => (float) $r['green']); 
 	$temp[] = array('v' => (float) $r['ukip']); 
-/*	$temp[] = array('v' => (float) $r['snp']); 
-	$temp[] = array('v' => (float) $r['pc']); 
-	$temp[] = array('v' => (float) $r['dup']); 
-	$temp[] = array('v' => (float) $r['uup']); 
-	$temp[] = array('v' => (float) $r['apni']); 
-	$temp[] = array('v' => (float) $r['sdlp']); 
-	$temp[] = array('v' => (float) $r['sf']); 
-*/	$temp[] = array('v' => (float) $r['others']); 
 	$rows[] = array('c' => $temp);
 }
+} else {
+    echo "0 results";
+}
+
+
 }
 else {
 $table = array();
@@ -100,7 +101,8 @@ $table['cols'] = array(
 );
 //First Series
 $rows = array();
-while($r = mysql_fetch_assoc($queryData)) {
+//while($r = mysql_fetch_assoc($queryData)) {
+while($r = $result->fetch_assoc()) {
 	$temp = array();
 	// the following line will used to slice the Pie chart
 	$temp[] = array('v' => (string) $r['date']); 
