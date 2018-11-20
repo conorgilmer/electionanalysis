@@ -21,7 +21,6 @@
       dataType:"json",
       async: false
     }).responseText;
-
    
     var jsonBounceData = $.ajax({
       url: "getbounces.php",
@@ -94,18 +93,38 @@
   <?php
   include('config.php');
 
+$conn = new mysqli($dbhost, $dblogin, $dbpwd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 
     // Make a MySQL Connection
-    $con = mysql_connect($dbhost, $dblogin, $dbpwd) or die(mysql_error());
-    mysql_select_db($dbname) or die(mysql_error());
+    //$con = mysql_connect($dbhost, $dblogin, $dbpwd) or die(mysql_error());
+    //mysql_select_db($dbname) or die(mysql_error());
     // Create a Query
-    $sql_query = "SELECT id, date, source  FROM seats_uk ORDER BY date ASC";
+    $sql_query = "SELECT id, date, source  FROM seats_uk ORDER BY date DESC";
     // Execute query
-    $result = mysql_query($sql_query) or die(mysql_error());
-    while ($row = mysql_fetch_array($result)){
+    //$result = mysql_query($sql_query) or die(mysql_error());
+
+$result = $conn->query($sql_query);
+
+    //while ($row = mysql_fetch_array($result)){
+
+if ($result->num_rows > 0) {
+//$rows = array();
+//while($r = mysql_fetch_assoc($queryData)) {
+while($row = $result->fetch_assoc()) {
+
     echo '<option value="'. $row['id'] . '">'. $row['date'] .' - ' . $row['source'] . '</option>';
     }
-    mysql_close($con);
+
+} else {
+    echo "0 results";
+}
+
+
+//    mysql_close($con);
   ?>
   </select>
   </form>
