@@ -26,11 +26,18 @@ else if ($name =='others') {
 return $nameText;
 }
     $choice = $_GET["q"]; 
-    $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
-    mysql_select_db($dbname);    
-	
+//    $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
+//    mysql_select_db($dbname);    
+
+$conn = new mysqli($dbhost, $dblogin, $dbpwd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
 // The Chart table contain two fields: Date and PercentageChange
-$queryData = mysql_query("
+//$queryData = mysql_query("
+$queryData = "
   SELECT	seats_uk.date as thedate,
                 seats_uk.cons as scons,
                 seats_uk.lab as slab,
@@ -60,8 +67,9 @@ $queryData = mysql_query("
                 vote_uk.sdlp as vsdlp,
                 vote_uk.sf as vsf,
                 vote_uk.others as vothers
-        FROM seats_uk, vote_uk where seats_uk.date = vote_uk.date");
+        FROM seats_uk, vote_uk where seats_uk.date = vote_uk.date";
 
+$result = $conn->query($queryData);
 
 /*if ($choice == 'all') {
 $table = array();
@@ -114,8 +122,15 @@ $table['cols'] = array(
     array('label' => 'Proportional Seat Share', 'type' => 'number')
 );
 //First Series
+//$rows = array();
+//while($r = mysql_fetch_assoc($queryData)) {
+
+
+if ($result->num_rows > 0) {
 $rows = array();
-while($r = mysql_fetch_assoc($queryData)) {
+//while($r = mysql_fetch_assoc($queryData)) {
+while($r = $result->fetch_assoc()) {
+
 	$temp = array();
 	//$sats =$r['allseats'];
 	// the following line will used to slice the Pie chart
@@ -128,6 +143,11 @@ $schoice = "s".$choice;
 	$temp[] = array('v' => (float) (($r[$vchoice]/100) * 650)); 
 	$rows[] = array('c' => $temp);
 }
+} else {
+    echo "0 results";
+}
+
+
 //}
 
 $table['rows'] = $rows;
