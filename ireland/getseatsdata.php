@@ -1,20 +1,39 @@
 <?php
    $q=$_GET["q"];
+
 include('php/config.php');
 
-  $sql_query = "SELECT ff, fg, lb, gp, sf,wp,dl,sp,pb,ul,cp,un,fm,nl ,cnp,nal, others, pd from seats_ire where id = $q";
-  $con = mysql_connect($dbhost,$dblogin,$dbpwd);
-  if (!$con){ die('Could not connect: ' . mysql_error()); }
-  mysql_select_db($dbname, $con);
+$sql_query = "SELECT election, source, ff, fg, lb, gp, sf,wp,dl,sp,pb,ul,cp,un,fm,nl ,cnp,nal, others, pd 
+		from seats_ire where id = $q";
+//  $con = mysql_connect($dbhost,$dblogin,$dbpwd);
+//  if (!$con){ die('Could not connect: ' . mysql_error()); }
+//  mysql_select_db($dbname, $con);
 
-  $result = mysql_query($sql_query);
+//  $result = mysql_query($sql_query);
+
+// Create connection
+$conn = new mysqli($dbhost, $dblogin, $dbpwd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$result = $conn->query($sql_query);
+
   echo "{ \"cols\": [ {\"id\":\"\",\"label\":\"Party\",\"pattern\":\"\",\"type\":\"string\"}, {\"id\":\"\",\"label\":\"Percentage\",\"pattern\":\"\",\"type\":\"number\"}  , {\"id\":\"\",\"role\":\"style\",\"type\":\"string\"}  ], \"rows\": [ ";
-  $total_rows = mysql_num_rows($result);
+//  $total_rows = mysql_num_rows($result);
   $row_num = 0;
-  while($row = mysql_fetch_array($result)){
+//  while($row = mysql_fetch_array($result)){
+
+$total_rows = $result->num_rows;
+    // output data of each row
+
+
+    while($row = $result->fetch_assoc()) {
+
     $row_num++;
     if ($row_num == $total_rows){
-echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff'] . ",\"f\":null},{\"v\":\"#008000\",\"f\":null} ]},";
+      echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff'] . ",\"f\":null},{\"v\":\"#008000\",\"f\":null} ]},";
       echo "{\"c\":[{\"v\":\"" . 'Fine Gael' . "\",\"f\":null},{\"v\":" . $row['fg'] . ",\"f\":null},{\"v\":\"#0000FF\",\"f\":null} ]},";
       echo "{\"c\":[{\"v\":\"" . 'Labour' . "\",\"f\":null},{\"v\":" . $row['lb'] . ",\"f\":null},{\"v\":\"#FF0000\",\"f\":null} ]},";
 
@@ -69,9 +88,5 @@ echo "{\"c\":[{\"v\":\"" . 'Fianna Fail' . "\",\"f\":null},{\"v\":" . $row['ff']
   }
   echo " ] }";
 
-
-
-
-
-  mysql_close($con);
+  //mysql_close($con);
 ?>

@@ -3,11 +3,12 @@
    include('php/config.php');
 
     $choice = $_GET["q"]; 
-    $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
-    mysql_select_db($dbname);    
+//    $db =  mysql_connect($dbhost,$dblogin,$dbpwd);
+//    mysql_select_db($dbname);    
 	
 // The Chart table contain two fields: Date and PercentageChange
-$queryData = mysql_query("
+//$queryData = mysql_query("
+$queryData ="
   SELECT	date,
                 ff,
                 fg,
@@ -18,8 +19,16 @@ $queryData = mysql_query("
                 dl,
                 sf,
                 others
-        FROM seats_ire ");
+        FROM seats_ire ";
 
+// Create connection
+$conn = new mysqli($dbhost, $dblogin, $dbpwd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$result = $conn->query($queryData);
 
 $table = array();
 if ($choice == 'all') {
@@ -55,19 +64,28 @@ $table['cols'] = array(
 }
 //First Series
 $rows = array();
-while($r = mysql_fetch_assoc($queryData)) {
+//while($r = mysql_fetch_assoc($queryData)) {
+
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($r = $result->fetch_assoc()) {
 	$temp = array();
 	// the following line will used to slice the Pie chart
 	$temp[] = array('v' => (string) $r['date']); 
 	$edate = $r['date'];
-  $queryDataV = mysql_query("SELECT date, ff, fg,lb,sf,pd, wp, dl,gp, others from votes_ire where date = '$edate'");
+
+  //$queryDataV = mysql_query("SELECT date, ff, fg,lb,sf,pd, wp, dl,gp, others from votes_ire where date = '$edate'");
+  $queryDataV = "SELECT date, ff, fg,lb,sf,pd, wp, dl,gp, others from votes_ire where date = '$edate'";
 	$highbounce  = 0;
 	$lowbounce   = 0.0;
 	$avgbounce   = 0;
 	$bounce      = 0;
 	$bounce_t    = 0;
 	$parlseats   = 166;
-	while($votes = mysql_fetch_assoc($queryDataV)) {
+	//while($votes = mysql_fetch_assoc($queryDataV)) {
+	$result1 = $conn->query($queryDataV);
+        while($r = $result1->fetch_assoc()) {
 		$bounce = (float)($r['ff']) - ($parlseats * $votes['ff']/100);
 		$bounce_t = abs($bounce) + $bounce_t;
 		$lowbounce = (((($bounce) > $lowbounce)) ? $lowbounce :($bounce));
@@ -120,6 +138,11 @@ while($r = mysql_fetch_assoc($queryData)) {
 	}
 	$rows[] = array('c' => $temp);
 }
+} else {
+    echo "0 results";
+}
+
+
 //}
 
 $table['rows'] = $rows;
