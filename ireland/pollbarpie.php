@@ -96,16 +96,41 @@
 
 
     // Make a MySQL Connection
-    $con = mysql_connect($dbhost, $dblogin, $dbpwd) or die(mysql_error());
-    mysql_select_db($dbname) or die(mysql_error());
+//    $con = mysql_connect($dbhost, $dblogin, $dbpwd) or die(mysql_error());
+//    mysql_select_db($dbname) or die(mysql_error());
     // Create a Query
     $sql_query = "SELECT id, date, source  FROM polls_ireland ORDER BY date DESC";
     // Execute query
-    $result = mysql_query($sql_query) or die(mysql_error());
-    while ($row = mysql_fetch_array($result)){
+//    $result = mysql_query($sql_query) or die(mysql_error());
+
+
+// Create connection
+$conn = new mysqli($dbhost, $dblogin, $dbpwd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$result = $conn->query($sql_query);
+
+
+
+
+//    while ($row = mysql_fetch_array($result)){
+ 
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
     echo '<option value="'. $row['id'] . '">'. $row['date'] .' - ' . $row['source'] . '</option>';
     }
-    mysql_close($con);
+} else {
+    echo "0 results";
+}
+
+
+$conn->close;
+    //mysql_close($con);
   ?>
   </select>
   </form>
@@ -113,10 +138,16 @@
 </div>
       <div class="row">
         <div class="col-lg-6">
-  <div id="polls_pie_div"></div>
+	</div>
+        <div class="col-lg-6">
+	</div>
+	</div>
+      <div class="row">
+        <div class="col-lg-6">
+  <div id="polls_pie_div" style="border: 1px solid #ccc"></div>
         </div>
         <div class="col-lg-6">
-  <div id="polls_bar_div"></div>
+  <div id="polls_bar_div" style="border: 1px solid #ccc"></div>
         </div>
       </div>
 

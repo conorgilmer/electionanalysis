@@ -34,7 +34,7 @@ $result_votes = $conn->query($sql_query_votes);
     $row_num_votes++;
     if ($row_num_votes == $total_rows_votes){
 	$seats = 166;
-	$pff = (float) ($seats * $row_votes['fg'])/100; 
+	$pff = (float) ($seats * $row_votes['ff'])/100; 
 	$pfg = (float) ($seats * $row_votes['fg'])/100; 
 	$plab = (float) ($seats * $row_votes['lb'])/100; 
 	$pgreen = (float) ($seats * $row_votes['gp'])/100; 
