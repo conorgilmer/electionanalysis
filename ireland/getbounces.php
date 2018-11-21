@@ -5,16 +5,32 @@
   $sql_query_votes = "SELECT id,ff,fg,lb,gp,sf,wp,dl,pd,sp,pb,ul,fm,cnp,cp,nl,nal,un, others from votes_ire where id = $q";
   $sql_query_seats = "SELECT id,total,ff,fg,lb,gp,sf,wp,dl,pd,sp,pb,ul,fm,cnp,cp,nl,nal,un, others from seats_ire where id = $q";
 
-  $con = mysql_connect($dbhost,$dblogin,$dbpwd);
+  //$con = mysql_connect($dbhost,$dblogin,$dbpwd);
 
-  if (!$con){ die('Could not connect: ' . mysql_error()); }
-  mysql_select_db($dbname, $con);
+  //if (!$con){ die('Could not connect: ' . mysql_error()); }
+  //mysql_select_db($dbname, $con);
 
-  $result_votes = mysql_query($sql_query_votes);
+  //$result_votes = mysql_query($sql_query_votes);
 
-  $total_rows_votes = mysql_num_rows($result_votes);
+
+
+// Create connection
+$conn = new mysqli($dbhost, $dblogin, $dbpwd, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$result_votes = $conn->query($sql_query_votes);
+
+  //$total_rows_votes = mysql_num_rows($result_votes);
   $row_num_votes = 0;
-  while($row_votes = mysql_fetch_array($result_votes)){
+  //while($row_votes = mysql_fetch_array($result_votes)){
+  $total_rows_votes = $result_votes->num_rows;
+    // output data of each row
+    while($row_votes = $result_votes->fetch_assoc()) {
+
+
     $row_num_votes++;
     if ($row_num_votes == $total_rows_votes){
 	$seats = 166;
@@ -39,11 +55,18 @@
 	}
   }
 
-  $result = mysql_query($sql_query_seats);
+  //$result = mysql_query($sql_query_seats);
+  $result = $conn->query($sql_query_seats);
   echo "{ \"cols\": [ {\"id\":\"\",\"label\":\"Party\",\"pattern\":\"\",\"type\":\"string\"}, {\"id\":\"\",\"label\":\"Seat Return Difference\",\"pattern\":\"\",\"type\":\"number\"} , {\"id\":\"\",\"role\":\"style\",\"type\":\"string\"} ], \"rows\": [ ";
-  $total_rows = mysql_num_rows($result);
+//  $total_rows = mysql_num_rows($result);
   $row_num = 0;
-  while($row = mysql_fetch_array($result)){
+//  while($row = mysql_fetch_array($result)){
+
+
+$total_rows = $result->num_rows;
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+
     $row_num++;
     if ($row_num == $total_rows){
       $bff = round($row['ff'] - $pff);
@@ -115,5 +138,6 @@
     }
   }
   echo " ] }";
-  mysql_close($con);
+  //mysql_close($con);
+  $conn->close;
 ?>
