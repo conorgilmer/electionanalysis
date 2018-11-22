@@ -10,6 +10,10 @@ include('php/config.php');
 
 <?php 
 $partynames = array("Fianna Fail", "Fine Gael", "Labour", "Sinn Fein", "Greens", "Others");
+        $partyseats= array(44, 51, 7, 23, 2, 30);
+        $partyvotes= array(24.3, 25.5, 6.6, 13.8, 2.7, 27.1);
+//echo "dal seats = ". array_sum($partyseats);
+//echo "dal votes = ". array_sum($partyvotes);
 ?>
 <!--script type="text/javascript" src="https://www.google.com/jsapi"></script>
 -->
@@ -43,7 +47,7 @@ series: {
 		// tooltip: { trigger: 'selection' }, 
       };
 
-        var inVotes = ['Votes', 24.3, 25.5, 6.6, 13.8, 2.7, 13.1, ''];
+        var inVotes = ['Votes', 24.3, 25.5, 6.6, 13.8, 2.7, 27.1, ''];
         var dataVotes = google.visualization.arrayToDataTable([
 		['API',<?php
     for($i=0;$i<6;$i++){
