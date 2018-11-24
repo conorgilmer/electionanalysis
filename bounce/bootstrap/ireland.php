@@ -23,7 +23,9 @@ if ($result->num_rows > 0) {
 	$allseats = $row["total"];
         //echo "id: " . $row["id"]. " - Name: " . $row["source"]. " " . $row["date"]. "<br>";
 	array_push($seats, $row["ff"], $row["fg"], $row["lb"], $row["gp"], $row["sf"]);
-	array_push($seats, $row["sp"], $row["pb"], $row["ul"],$row["dl"], $row["wp"], $row["ri"], $row["pd"], $row["others"]);
+	array_push($seats, $row["sp"], $row["pb"], $row["ul"],$row["dl"], $row["wp"], $row["ri"], $row["pd"]);
+	array_push($seats, $row["SD"], $row["IA"]);
+	array_push($seats, $row["others"]);
     }
 } else {
     echo "results from ". $election;
@@ -39,7 +41,10 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         //echo "id: " . $row["id"]. " - Name: " . $row["source"]. " " . $row["date"]. "<br>";
 	array_push($votes, $row["ff"], $row["fg"], $row["lb"], $row["gp"], $row["sf"]);
-	array_push($votes, $row["sp"], $row["pb"], $row["ul"], $row["dl"], $row["wp"], $row["ri"], $row["pd"], $row["others"]);
+	array_push($votes, $row["sp"], $row["pb"], $row["ul"], $row["dl"], $row["wp"], $row["ri"], $row["pd"]);
+	array_push($votes, $row["SD"], $row["IA"]);
+	array_push($votes, $row["others"]);
+	
 	array_push($prseats, 
 			round($allseats*$row["ff"]/100), 
 			round($allseats*$row["fg"]/100), 
@@ -53,6 +58,8 @@ if ($result->num_rows > 0) {
 			round($allseats*$row["wp"]/100), 
 			round($allseats*$row["ri"]/100), 
 			round($allseats*$row["pd"]/100), 
+			round($allseats*$row["SD"]/100), 
+			round($allseats*$row["IA"]/100), 
 			round($allseats*$row["others"]/100) 
 		);
     }
@@ -61,7 +68,6 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 
-//print_r($votes);
 $_SESSION['votes'] = $votes;
 ?>
 

@@ -63,42 +63,21 @@ series: { 0:{color:'<?php echo $ffcol;?>'}, 1:{color:'<?php echo $fgcol;?>'},
 	dataB.addColumn('string', 'Question'); 
 	dataB.addColumn('number', 'Seat Bonus');
 dataB.addColumn({type: 'string', role: 'style'});
-/*
-dataB.addRow(['Deliverd', 30, 'color: green']);
-dataB.addRow(['Failed', 5, 'color: #FF0000']);
-dataB.addRow(['NCPR Rejected', 3, 'color: #00FF00']);
-dataB.addRow(['Not Sent To operator', 10, 'color: #0000FF']);*/
 	dataB.addRows([["FF", +6, '<?php echo $ffcol;?>'], ["FG", +10, '<?php echo $fgcol;?>'],["LAB", -3, '<?php echo $labcol;?>'],["SF", +1, '<?php echo $sfcol;?>'],["GP", -2, '<?php echo $gpcol;?>'],["Oth", -3, '<?php echo $othcol;?>']]); 
     <?php //for($i=0;$i<$countArrayLength;$i++){
       //  echo "['" . $values[$i]['question'] . "'," . $values[$i]['globalavg'] ."],"; //} ?> //]);
-    var optionsb = {
+   	 var optionsb = {
         title: 'Seat Bounce',
+ 	width: 600,
+        height: 400,
         legend: { position: 'none' },
                 vAxis: {minValue: -25 ,
                 title: 'Seat Bonus',
                 maxValue: 25},
                 hAxis:{ slantedText: false},
- 	//colors: ['red','green', 'blue', 'yellow', 'cyan', 'magenta','green'],
-	series: { 
-		0:{color:'<?php echo $ffcol;?>'}, 
-		1:{color:'<?php echo $fgcol;?>'},
-    		2:{color:'<?php echo $labcol;?>'},
-		3:{color:'<?php echo $sfcol;?>'},
-    		4:{color:'<?php echo $gpcol;?>'}, 
-		5:{color:'<?php echo $othcol;?>'} } 
-
  };
-   
-/*
-        var optionsb = {
-          title : 'Monthly Coffee Production by Country',
-          vAxis: {title: 'Cups'},
-          hAxis: {title: 'Month'},
-          seriesType: 'bars',
-          series: {5: {type: 'line'}}
-        };*/
-	 var chartb = new google.visualization.ColumnChart(document.getElementById('column_chart'));
-    chartb.draw(dataB, optionsb);
+	var chartb = new google.visualization.ColumnChart(document.getElementById('column_chart'));
+    	chartb.draw(dataB, optionsb);
  	  }
 </script>
 
@@ -126,10 +105,10 @@ dataB.addRow(['Not Sent To operator', 10, 'color: #0000FF']);*/
 	</div>
 </div>    	
       <div class="row">
-       <h1>Votes Vs Seats <?php echo $election; ?></h1>
+       <h1>Seat Bonus <?php echo $election; ?></h1>
         <div class="col-lg-9">
 	
-	<div id="column_chart"></div>
+	<div id="column_chart" style="width: 100%; height: auto"></div>
 	</div>
 </div>    	
 
