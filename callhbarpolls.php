@@ -35,7 +35,7 @@ $id = $_GET['id'];
 <div clas="row">
 <div class="span12">
 
-    <img src="http://localhost/electionanalysis/graphpoll.php?type=hbar&title=Parties&height=450&width=900&id=<?echo $id;?>"/> 
+    <img src="graphpoll.php?type=hbar&title=Parties&height=450&width=900&id=<?echo $id;?>"/> 
  
 <p>
  <a href="callpiepolls.php?id=<?echo $id;?>" class=btn btn-primary role=button>Pie Chart</a>
