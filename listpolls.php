@@ -38,10 +38,12 @@ include (TEMPLATE_PATH . "/public/header.html");
 <div class="span9">
 
 <?php 
-
+echo "before select";
 $sqlQuery = "SELECT * FROM polls_ireland";
 $result = mysql_query($sqlQuery);
 
+echo "in list";
+print_r($result);
 
 if ($result) {
 	$htmlString = "";
@@ -58,7 +60,7 @@ if ($result) {
         $htmlString .= "<th>Sinn Fein</th>";
         $htmlString .= "<th>Others</th>";
 	$htmlString .= "<th>PDs</th>";
-//	$htmlString .= "<th colspan='2'>Actions</th>";
+	$htmlString .= "<th colspan='3'>Actions</th>";
 
 	$htmlString .= "</tr>";
 	
@@ -66,7 +68,7 @@ if ($result) {
 	{
 		$htmlString .=  "<tr>" ;
 		$htmlString .=  "<td>";
-		$htmlString .=  output_pie_link($product["id"]); //$product["id"];
+		$htmlString .=  output_def_link($product["id"]); //$product["id"];
 		$htmlString .=  "</td>";
 		$htmlString .=  "<td>";
 		$htmlString .=  $product["date"];
@@ -97,6 +99,15 @@ if ($result) {
 		$htmlString .=  $product["pd"];
 		$htmlString .=  "</td>";
 		
+		$htmlString .=  "<td>";
+		$htmlString .=  output_pie_link($product["id"]); //$product["id"];
+		$htmlString .=  "</td>";
+		$htmlString .=  "<td>";
+		$htmlString .=  output_vbar_link($product["id"]); //$product["id"];
+		$htmlString .=  "</td>";
+		$htmlString .=  "<td>";
+		$htmlString .=  output_hbar_link($product["id"]); //$product["id"];
+		$htmlString .=  "</td>";
 //		$htmlString .=  "<td>";
 //		$htmlString .=  output_edit_link($product["id"]);
 //		$htmlString .=  "</td>";

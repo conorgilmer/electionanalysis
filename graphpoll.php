@@ -56,10 +56,12 @@ include (APPLICATION_PATH . "/inc/db.inc.php");
 
         $dataSet = new XYDataSet();
 	$sqlQuery = "SELECT * FROM polls_ireland where id = $id" ;
-	$result = mysql_query($sqlQuery);
+	//$result = mysql_query($sqlQuery);
+	$result = $link_id->query($sqlQuery);
 
 	if ($result) {
-		while ($db_field = mysql_fetch_assoc($result))
+		//while ($db_field = mysql_fetch_assoc($result))
+		while ($db_field = $result->fetch_assoc())
 		{
 		        $dataSet->addPoint(new Point("FF", $db_field['ff'] ));
 		        $dataSet->addPoint(new Point("FG", $db_field['fg'] ));
