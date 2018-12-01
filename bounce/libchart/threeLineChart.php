@@ -7,6 +7,8 @@ $graphTitle  = $_GET['title'];
 $line1Title  = $_GET['line1'];
 $line2Title  = $_GET['line2'];
 $line3Title  = $_GET['line3'];
+//$number  = $_GET['num'];
+$number  = isset($_GET['num']) ? $_GET['num'] : 4;  /* default 4 */
 $graphWidth  = isset($_GET['width']) ? $_GET['width'] : 750;  /* default 750 */
 $graphHeight = isset($_GET['height']) ? $_GET['height'] : 375; /* default 375 */
 
@@ -21,7 +23,8 @@ include "library/libchart/classes/libchart.php";
 
 	$serie2 = new XYDataSet();
 	$serie3 = new XYDataSet();
-	for ($i=0; $i<5; $i++){
+
+	for ($i=0; $i<$number; $i++){
 	$serie1->addPoint(new Point($_SESSION['xaxis'][$i], $_SESSION['yaxis'][$i]));
 	$serie2->addPoint(new Point($_SESSION['xaxis'][$i], $_SESSION['zaxis'][$i]));
 	$serie3->addPoint(new Point($_SESSION['xaxis'][$i], $_SESSION['waxis'][$i]));
