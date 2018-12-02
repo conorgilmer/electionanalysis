@@ -20,7 +20,7 @@ $queryData = "
                 cons, lab, libdems,
                 ukip, green, snp, pc, uup, dup, apni, sdlp, sf,
                 others
-        FROM seats_uk ";
+        FROM vote_uk ";
 $result = $conn->query($queryData);
 $number=0;
 while($r = $result->fetch_assoc()) {
@@ -35,14 +35,14 @@ $_SESSION['xaxis'] = $xAxis;
 $_SESSION['yaxis'] = $yAxis;
 $_SESSION['zaxis'] = $zAxis;
 $_SESSION['waxis'] = $wAxis;
-$gTitle = "UK Elections Seats";
+$gTitle = "UK Elections Vote Percentage";
 $gLine1 = "Conservatives";
 $gLine2 = "Labour";
 $gLine3 = "Lib Dems";
 ?>
 <html>
 <body>
-<h2>UK Elections Seats using LibCharts</h2>
+<h2>UK Elections Vote % using LibCharts</h2>
 <img src="http://localhost/electionanalysis/bounce/libchart/threeLineChart.php?title=<?echo $gTitle;?>&line1=<?echo $gLine1;?>&line2=<?echo $gLine2;?>&line3=<?echo $gLine3;?>&num=<?echo $number;?>"/>
 
 </body>
