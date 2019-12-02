@@ -29,3 +29,5 @@ the publication or last date of an opinion polls was taken as the date of the po
 + common election main parites and others bar chart
 + page to add polls
 + page to add election results
++ add 2017 uk general and 2019 euro
++ add polls v actual votes
