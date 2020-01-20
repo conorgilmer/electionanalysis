@@ -23,7 +23,7 @@ The 2016 seen a hung dail, a doubling of the Fianna Fail Seats, Fine Gael lost s
 </td><td>
 <img src="bounceirege1992.php">
 </td></tr></table></p>
-The Irish PR system does give a relative reflection of votes to seats achieved by the parties, with the larger parties getting a bonus, the PD's seemed to switch between getting a seat bonus and being under represented through out their existence, while Sinn F&eacute;in has got seats in the D&aacute;ail they have been traditionally <i>"transfer repellant"</i> and had to rely on large 1st preference votes to get elected since they don't pick up transfers.
+The Irish PR system does give a relative reflection of votes to seats achieved by the parties, with the larger parties getting a bonus, the PD's seemed to switch between getting a seat bonus and being under represented through out their existence, while Sinn F&eacute;in has got seats in the D&aacute;il they have been traditionally <i>"transfer repellant"</i> and had to rely on large 1st preference votes to get elected since they don't pick up transfers.
 <h2>UK First Past the Post</h2>
 <p></p>
 <table border=0 background='FFFFFF'>
