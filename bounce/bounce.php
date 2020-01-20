@@ -4,6 +4,16 @@
 I display here graphically the seat bonus parties get as a result of various voting systems. That is the percentage difference between a parties first preference vote across the country relative to the seats they attained in the D&aacute;il/Parliament. <br>
 <h2>Ireland PR-STV</h2>
 <table border=0>
+
+<tr>
+<td>
+The 2016 seen a hung dail, a doubling of the Fianna Fail Seats, Fine Gael lost some seats and Labour were punished and nearly wiped out. The emergence of fringe parties and the pletora of independents, led to a Fine Gael, Indepedent Alliance and Indpendent government in a supply and confidence arrangement with Fianna Fail.
+</td>
+<td>
+<img src="bounceirege2016f.php">
+</td>
+</tr>
+
 <tr><td>
 <img src="bounceirege2011f.php">
 </td><td>The 2011 election seen a sea change in irish politics, with the demise of the Fianna Fail vote, for the first time being overtaken by Fine Gael, as the largest party, but also been surpassed by Labour. The government were sucha  toxic brand that the junior partner Green party lost all its seats, with neither party benefiting from transfers to get more td's elected.
