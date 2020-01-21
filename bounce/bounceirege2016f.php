@@ -22,15 +22,15 @@
         //Create data array for graph
         $data = array
         (
-            'Fianna Fail'=>6,
+            'Fianna Fáil'=>6,
             'Fine Gael'=>10,
             'Labour'=>-3,
             'Greens'=>-2,
-            'Sinn Fein'=>1,
-            'AAAPBP'=>0,
-            'IndAll'=>-1,
+            'Sinn Féin'=>1,
+            'AAA/PBP'=>0,
+            'Ind All'=>-1,
             'Renua'=>-3,
-            'SocDem'=>-2,
+            'Soc Dem'=>-2,
             'I4C'=>2,
             'Others'=>-6,
         );
